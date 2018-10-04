@@ -7,7 +7,7 @@ const SecondPage = () => (
   <Layout>
     <h1>Lab 1: Create something</h1>
     <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <Link to="/">Go to the start</Link>
   </Layout>
 )
 
