@@ -14,7 +14,7 @@ const IndexPage = () => (
     <p>Even if you are a genius, you'll struggle if you haven't practiced. Imagine trying to learn how to play the piano by watching weeks' worth of online lessons but never touching any keys. Your theoretical knowledge may increase, but not your practical, musical abilities.</p>
     <p>After all, if this weren't the case, the majority of Rugby sports fans would have pro league level skills in the field.</p>
     <p>The truth is, we learn by doing. When we practice, make mistakes, correct them, and keep practicing, our theoretical knowledge becomes something magical. It becomes a skill impressed in our muscle memory and brain.</p>
-    <p>So I structured my workshop to be ruthlessly practical with lots of time dedicated to practicing through hands-on labs. By the end of this workshop, you'll be able to claim that <em>you</em> developed and deployed a chatbot. And you'll be always able to reference back to these labs, long after the workshop is over.</p>
+    <p>So I structured my workshop to be ruthlessly practical with lots of time dedicated to practicing and experimenting through hands-on labs. By the end of this workshop, <strong>you'll be able to claim that <em>you</em> developed and deployed a chatbot</strong>. And you can always reference these labs, long after the workshop is over.</p>
     <div><img src={signature} alt="Antonio's Signature" style={{float: "right"}} /></div>
     <Link to="/lab-1/">Lab 1</Link>
   </Layout>
