@@ -4,7 +4,10 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
+import Navigation from './navigation'
 import './layout.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -29,6 +32,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
+        <Navigation />
         <div
           style={{
             margin: '0 auto',

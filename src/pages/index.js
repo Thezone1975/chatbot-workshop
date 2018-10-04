@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
+
 import signature from '../images/signature.png'
 
 
@@ -15,8 +15,8 @@ const IndexPage = () => (
     <p>After all, if this weren't the case, the majority of Rugby sports fans would have pro league level skills in the field.</p>
     <p>The truth is, we learn by doing. When we practice, make mistakes, correct them, and keep practicing, our theoretical knowledge becomes something magical. It becomes a skill impressed in our muscle memory and brain.</p>
     <p>So I structured my workshop to be ruthlessly practical with lots of time dedicated to practicing and experimenting through hands-on labs. By the end of this workshop, <strong>you'll be able to claim that <em>you</em> developed and deployed a chatbot</strong>. And you can always reference these labs, long after the workshop is over.</p>
+    <p>Looking forward to seeing you succeed.</p>
     <div><img src={signature} alt="Antonio's Signature" style={{float: "right"}} /></div>
-    <Link to="/lab-1/">Lab 1</Link>
   </Layout>
 )
 

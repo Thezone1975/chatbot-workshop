@@ -342,6 +342,24 @@ ul {
   list-style-position: outside;
   list-style-image: none;
 }
+nav ul {
+  list-style-type: none;
+  margin-top: 1rem;
+  padding: 0.3rem;
+  display: flex;
+  align-content: center;
+}
+.nav-link {
+  color: rebeccapurple;
+  font-weight: bold;
+}
+.nav-link:hover {
+  color: #e6ffcc;
+}
+.current-link {
+  color: #fff;
+  background-color: rebeccapurple;
+}
 ol {
   margin-left: 1.45rem;
   margin-right: 0;
@@ -518,6 +536,9 @@ ol li {
 }
 ul li {
   padding-left: 0;
+  margin-left: 1.45rem;
+  margin-bottom: calc(1.45rem / 2);
+  margin-top: calc(1.45rem / 2);
 }
 li > ol {
   margin-left: 1.45rem;
