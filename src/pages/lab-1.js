@@ -22,6 +22,7 @@ const SecondPage = () => (
         Enroll in a Chatbot Course online to obtain a certificate and badge, as
         well as other benefits.
       </li>
+      <li>Take your first graded quiz.</li>
     </ol>
     <h3>Task 1: Register with IBM Cloud</h3>
     <p>
@@ -285,6 +286,16 @@ const SecondPage = () => (
     <p>
       Later in the workshop, we'll cover how to obtain the free WordPress
       testing environment for the course you just enrolled in.
+    </p>
+    <h3>Task 4: Take the Module 1 Quiz</h3>
+    <p>
+      Head over to the Build Your Own Chatbot course you just enrolled in and{' '}
+      <strong>
+        find the <span className="instruction">Graded Review Questions</span>{' '}
+        inside Module 1. Take the quiz.
+      </strong>{' '}
+      There are no trick questions, so go with the answer that appears to be
+      most logical to you.
     </p>
     <p>
       This concludes your very first lab. On the next one, we'll start getting
