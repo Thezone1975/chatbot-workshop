@@ -138,8 +138,8 @@ const SecondPage = () => (
     <ol>
       <li>
         <strong>
-          Click on the{' '}
-          <span className="instruction">Create resource button</span>
+          Click on the <span className="instruction">Create resource</span>{' '}
+          button
         </strong>{' '}
         on your dashboard.
       </li>
@@ -159,7 +159,7 @@ const SecondPage = () => (
       </li>
       <li>
         <strong>
-          Click on the <span className="instruction">Create button</span>
+          Click on the <span className="instruction">Create</span> button
         </strong>{' '}
         at the bottom to create your instance.
       </li>
@@ -230,25 +230,26 @@ const SecondPage = () => (
     <ul>
       <li>
         Being enrolled in the course will enable you to take the quizzes and
-        final exam. A passing grade will entitle you to a badge backed by IBM,
-        to attest to your ability to create chatbots. This badge, digitally
-        issued by Acclaim, can then be shared on your LinkedIn profile, other
-        social media sites (a little bragging won't hurt anyone), on your
-        CV/résumé, etc.
+        final exam. A passing grade will entitle you to{' '}
+        <strong>a badge backed by IBM</strong>, to attest to your ability to
+        create chatbots. This badge, digitally issued by Acclaim, can then be
+        shared on your LinkedIn profile, other social media sites (a little
+        bragging won't hurt anyone), on your CV/résumé, etc.
       </li>
       <li>
-        Upon passing the exam, you'll also receive a digital certificate of
-        accomplishment from Cognitive Class, which you could print if you
-        wished.
+        Upon passing the exam, you'll also receive{' '}
+        <strong>a digital certificate of accomplishment</strong> from Cognitive
+        Class, which you could print if you wished.
       </li>
       <li>
-        You'll be given a special coupon code that allows you to receive US$200
-        a month worth of Cloud services for six months. This can be applied for
-        many IBM Cloud services, including Watson Assistant.
+        You'll be given a special coupon code that allows you to receive{' '}
+        <strong>US$200 a month worth of Cloud services for six months</strong>{' '}
+        (a total value of US$1,200). This can be applied to use many IBM Cloud
+        services, including Watson Assistant.
       </li>
       <li>
-        You'll receive a free WordPress testing site that we'll need for the
-        deployment of your chatbot later in the workshop.
+        You'll receive <strong>a free WordPress testing site</strong> that we'll
+        need for the deployment of your chatbot later in the workshop.
       </li>
       <li>
         Once you're registered with Cognitive Class, you can take many other
