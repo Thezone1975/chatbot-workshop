@@ -5,7 +5,7 @@ import { UncontrolledTooltip } from 'reactstrap'
 
 import Layout from '../components/layout'
 
-const SecondPage = () => (
+const Lab1 = () => (
   <Layout>
     <h2>Lab 1: Let's get started</h2>
     <p>
@@ -321,4 +321,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default Lab1

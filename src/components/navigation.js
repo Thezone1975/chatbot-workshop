@@ -28,6 +28,9 @@ const Navigation = () => (
         <NavItem>
           <NavigationLink to="/lab-2">Lab 2</NavigationLink>
         </NavItem>
+        <NavItem>
+          <NavigationLink to="/lab-3">Lab 3</NavigationLink>
+        </NavItem>
       </Nav>
     </div>
   </div>
