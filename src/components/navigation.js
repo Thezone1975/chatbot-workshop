@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, NavItem } from 'reactstrap';
+import { Nav, NavItem } from 'reactstrap'
 
 import NavigationLink from './navigation-link'
 
@@ -13,20 +13,24 @@ const Navigation = () => (
     <div
       style={{
         margin: '0 auto',
-        maxWidth: 960
+        maxWidth: 960,
       }}
     >
-        <Nav pills>
-          <NavItem>
-            <NavigationLink to="/" exact={true}>Home</NavigationLink>
-          </NavItem>
-          <NavItem>
-            <NavigationLink to="/lab-1">Lab 1</NavigationLink>
-          </NavItem>
-        </Nav>
-      </div>
-
+      <Nav pills>
+        <NavItem>
+          <NavigationLink to="/" exact={true}>
+            Home
+          </NavigationLink>
+        </NavItem>
+        <NavItem>
+          <NavigationLink to="/lab-1">Lab 1</NavigationLink>
+        </NavItem>
+        <NavItem>
+          <NavigationLink to="/lab-2">Lab 2</NavigationLink>
+        </NavItem>
+      </Nav>
     </div>
+  </div>
 )
 
 export default Navigation
