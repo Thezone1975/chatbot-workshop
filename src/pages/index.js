@@ -7,7 +7,7 @@ import signature from '../images/signature.png'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Introduction</h1>
+    <h2>Introduction</h2>
     <p>Welcome to the hands-on labs for my Watson Assistant Chatbot Workshop.</p>
     <p>When taking an in-person workshop or an online course, it's easy to watch the presenter introduce new concepts, nod along, and feel like you learned a lot. This approach will certainly introduce you to <em>some</em> new knowledge, but it can also lull you into a false sense of security in your newly acquired abilities.</p>
     <p>What happens next, typically, is that you'll have a terrible realization a couple of days later when you actually try to create something with your new knowledge. You'll quickly find out that you got the gist of it, but don't quite remember the details well enough to make it work.</p>
