@@ -1,14 +1,15 @@
 import React from 'react'
 import courseImage from '../images/how-to-build-a-chatbot.png'
+import { UncontrolledTooltip } from 'reactstrap'
 
 import Layout from '../components/layout'
 
 const SecondPage = () => (
   <Layout>
-    <h2>Lab 1: Get Set Up</h2>
+    <h2>Lab 1: Let's get started</h2>
     <p>
       Welcome to your first hands-on lab. I'm sure you're eager to get started.
-      Before we can get begin to actually build chatbots, however, we'll need to
+      Before we can begin to actually build chatbots, however, we'll need to
       take care of a couple of prerequisites for this workshop.
     </p>
 
@@ -26,11 +27,12 @@ const SecondPage = () => (
     <p>
       To create chatbots, we'll use IBM Watson Assistant, an easy to use and
       powerful chatbot service offered on the IBM Cloud. So we need to make sure
-      that you have an account with IBM Cloud.
+      that you have an account with the IBM Cloud.
     </p>
     <ol>
       <li>
-        Register with IBM Cloud by clicking on the button below.
+        <strong>Register with IBM Cloud</strong> by clicking on the button
+        below.
         <p style={{ textAlign: 'center', margin: '20px' }}>
           <a
             className="btn btn-primary"
@@ -38,58 +40,90 @@ const SecondPage = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            Register for IBM Cloud
+            Register with IBM Cloud
           </a>
         </p>
       </li>
       <li>
         You'll be asked to log in if you already have an account with IBM.com.
-        If you do, log in. If you don't, click on Create an account and proceed
-        with the creation of an account with your professional email address (or
-        personal if you prefer).
+        If you do, log in. If you don't,{' '}
+        <strong>
+          click on <span className="instruction">Create an account</span>
+        </strong>{' '}
+        and proceed with the creation of an account with your professional email
+        address (or personal, if you prefer).
       </li>
       <li>
-        If you created an account in the previous step, you'll be asked to
-        verify your email. Check your inbox for the verification email (and for
-        good measure, be sure to check your spam folder as well, if you don't
-        see the email after a few minutes).
+        If you created an account in the previous step, you'll be asked to{' '}
+        <strong>verify your email</strong>. Check your inbox for the
+        verification email (and for good measure, be sure to check your spam
+        folder as well, if you don't see the email after a few minutes).
       </li>
       <li>
         At this point you'll be logged in with your IBM ID. The next step is to
         sign up for IBM Cloud, if you haven't done so already in the past. If
         you don't have an IBM Cloud account yet, you'll be presented with a page
-        asking you to sign up. Click on the Sign Up button presented to you on
-        the page. If clicking it does nothing, click the log out link available
-        on the page, log back in with your IBM ID, and then try again.
+        asking you to sign up.{' '}
+        <strong>
+          Click on the <span className="instruction">Sign Up</span> button
+        </strong>{' '}
+        presented to you on the page. [
+        <span
+          style={{
+            color: 'blue',
+            fontWeight: 'bold',
+          }}
+          href="#"
+          id="sign-up-not-working"
+        >
+          Tip
+        </span>
+        ]
+        <UncontrolledTooltip placement="top" target="sign-up-not-working">
+          If the <span className="instruction">Sign Up</span> button doesn't
+          work, log out and log back in, before trying again.
+        </UncontrolledTooltip>
       </li>
       <li>
         You'll see a registration form for IBM Cloud. Considering you likely
         just entered your information to register for an IBM ID, this extra step
-        might feel tedious. Thankfully, you can just enter your email address
-        and the rest of the form will disappear, allowing you to create an IBM
-        Cloud account by simply clicking on the Create Account button.
+        might feel tedious. Thankfully, you can just{' '}
+        <strong>enter your email address</strong> and the rest of the form will
+        disappear, allowing you to create an IBM Cloud account by simply{' '}
+        <strong>
+          clicking on the <span className="instruction">Create Account</span>{' '}
+          button
+        </strong>
+        .
       </li>
       <li>
-        Check your email once again click on the Confirm Account button provided
-        in the confirmation email.
+        Check your email once again{' '}
+        <strong>
+          click on the <span className="instruction">Confirm Account</span>{' '}
+          button
+        </strong>{' '}
+        provided in the confirmation email.
       </li>
       <li>
         Congratulations. You registered and activated your IBM Cloud account.
-        Our last step for this task is to log in using the provided button on
-        the success page you were redirected to.
+        Our last step for this task is to <strong>log in</strong> using the
+        provided button on the success page you were redirected to.
       </li>
       <li>You're now logged in and should see your (empty) dashboard.</li>
     </ol>
     <p>
       You can access this page at any time by logging in on the ibm.com/cloud
-      site, but I highly recommend that you just bookmark the{' '}
-      <a
-        href="https://console.bluemix.net/dashboard/apps/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        dashboard page
-      </a>{' '}
+      site, but I highly recommend that you just{' '}
+      <strong>
+        bookmark the{' '}
+        <a
+          href="https://console.bluemix.net/dashboard/apps/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          dashboard page
+        </a>
+      </strong>{' '}
       instead. It will give you quick access to seeing and managing all the
       resources you created inside of your IBM Cloud account.
     </p>
@@ -98,34 +132,56 @@ const SecondPage = () => (
 
     <p>
       Now that you have an IBM Cloud account, it's time to create an instance of
-      Watson Assistant. You can do so by following these simple steps:
+      IBM Watson Assistant. You can do so by following these simple steps:
     </p>
 
     <ol>
-      <li>Click on the Create resource button on your dashboard.</li>
       <li>
-        Search for Watson Assistant in the search field or select it from the AI
-        category of the catalog and click on it.
+        <strong>
+          Click on the{' '}
+          <span className="instruction">Create resource button</span>
+        </strong>{' '}
+        on your dashboard.
+      </li>
+      <li>
+        <strong>Search for Watson Assistant</strong> in the search field or
+        select it from the <span className="instruction">AI</span> category of
+        the catalog and <strong>click on it</strong>.
       </li>
       <li>
         You should see a Watson Assistant (formerly Conversation) creation page.
-        You can leave everything to default, or customize the name to your
-        liking.
+        You can leave everything to default, or{' '}
+        <strong>customize the name to your liking</strong>.
       </li>
       <li>
         Take note of the differences between the free Lite plan (which you'll be
         using) and the Standard Plan.
       </li>
-      <li>Click on the Create button at the bottom to create your instance.</li>
       <li>
-        You'll be redirected to the launch page for the service you just
-        created. Click on the Launch tool button to access the web application
-        that will allow you to create chatbots. You'll land on an informative
-        tab. Click the Workspaces tab instead, as it's where we'll be creating
-        chatbots.
+        <strong>
+          Click on the <span className="instruction">Create button</span>
+        </strong>{' '}
+        at the bottom to create your instance.
       </li>
       <li>
-        For quick access, you may want to bookmark this Workspaces page as well.{' '}
+        You'll be redirected to the launch page for the service you just
+        created.{' '}
+        <strong>
+          Click on the <span className="instruction">Launch tool</span> button
+        </strong>{' '}
+        to access the web application that will allow you to create chatbots.
+        You'll land on an informative tab.
+      </li>
+      <li>
+        <strong>
+          Click on the <span className="instruction">Workspaces</span> tab
+        </strong>{' '}
+        instead, as it's where we'll be creating chatbots. For quick access, you
+        may want to{' '}
+        <strong>
+          bookmark this <span className="instruction">Workspaces</span> page
+        </strong>{' '}
+        as well.
       </li>
     </ol>
 
