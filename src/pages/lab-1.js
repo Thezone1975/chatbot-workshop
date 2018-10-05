@@ -290,7 +290,15 @@ const SecondPage = () => (
     </p>
     <h3>Task 4: Take the Module 1 Quiz</h3>
     <p>
-      Head over to the Build Your Own Chatbot course you just enrolled in and{' '}
+      Head over to the{' '}
+      <a
+        href="https://courses.cognitiveclass.ai/courses/course-v1:CognitiveClass+CB0103EN+v1/courseware/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Build Your Own Chatbot
+      </a>{' '}
+      course you just enrolled in and{' '}
       <strong>
         find the <span className="instruction">Graded Review Questions</span>{' '}
         inside Module 1. Take the quiz.
@@ -298,11 +306,14 @@ const SecondPage = () => (
       There are no trick questions, so go with the answer that appears to be
       most logical to you.
     </p>
-    <p>
+    <blockquote>
       This concludes your very first lab. On the next one, we'll start getting
       our hands dirty by building our first chatbot components.
-    </p>
+    </blockquote>
     <p style={{ textAlign: 'center', margin: '20px' }}>
+      <Link className="btn btn-secondary" to="/">
+        Back to Introduction
+      </Link>{' '}
       <Link className="btn btn-primary" to="/lab-2">
         Proceed to Lab 2
       </Link>
