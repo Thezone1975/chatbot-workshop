@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'gatsby'
 import { Nav, NavItem } from 'reactstrap';
 
 import NavigationLink from './navigation-link'
