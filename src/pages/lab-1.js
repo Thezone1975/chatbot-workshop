@@ -1,5 +1,6 @@
 import React from 'react'
 import courseImage from '../images/how-to-build-a-chatbot.png'
+import { Link } from 'gatsby'
 import { UncontrolledTooltip } from 'reactstrap'
 
 import Layout from '../components/layout'
@@ -300,6 +301,11 @@ const SecondPage = () => (
     <p>
       This concludes your very first lab. On the next one, we'll start getting
       our hands dirty by building our first chatbot components.
+    </p>
+    <p style={{ textAlign: 'center', margin: '20px' }}>
+      <Link className="btn btn-primary" to="/lab-2">
+        Proceed to Lab 2
+      </Link>
     </p>
   </Layout>
 )
