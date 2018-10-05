@@ -658,6 +658,17 @@ button.btn-primary:hover {
   background-color: #e5ccff;
   border: 1px solid purple;
 }
+.tooltip .tooltip-inner {
+  background-color: rebeccapurple;
+}
+.arrow::before,
+.bs-tooltip-top .arrow::before {
+  border-top-color: rebeccapurple !important;
+}
+.instruction {
+  color: #e83e8c;
+  font-weight: bold;
+}
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
