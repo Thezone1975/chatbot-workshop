@@ -40,6 +40,7 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  font-weight: bold;
 }
 a:active,
 a:hover {
@@ -255,7 +256,7 @@ h2 {
 h3 {
   margin-left: 0;
   margin-right: 0;
-  margin-top: 0;
+  margin-top: 2rem !important;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
@@ -361,6 +362,7 @@ a.btn-primary {
   color: #fff;
   background-color: rebeccapurple;
   border: 1px solid #4c177d;
+  font-weight: bold;
 }
 a.btn-primary:hover,
 a.btn-primary:focus,
@@ -369,6 +371,7 @@ a.btn-primary:active:focus {
   color: #fff;
   background-color: #885ead;
   border: 1px solid #4c177d;
+  font-weight: bold;
 }
 ol {
   margin-left: 1.45rem;
@@ -652,11 +655,13 @@ button.btn-primary {
   color: #fff;
   background-color: rebeccapurple;
   border: 1px solid purple;
+  font-weight: bold;
 }
 button.btn-primary:hover {
   color: #e6ffcc;
   background-color: #e5ccff;
   border: 1px solid purple;
+  font-weight: bold;
 }
 .tooltip .tooltip-inner {
   background-color: rebeccapurple;
