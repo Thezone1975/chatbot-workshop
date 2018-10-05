@@ -42,6 +42,6 @@ NavigationLink.propTypes = {
 
 NavigationLink.defaultProps = {
   exact: false,
-  activeClassName: 'current-link',
+  activeClassName: 'current',
   className: '',
 };

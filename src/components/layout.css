@@ -356,7 +356,7 @@ nav ul {
 .nav-link:hover {
   color: #e6ffcc;
 }
-.current-link {
+a.current {
   color: #fff;
   background-color: rebeccapurple;
 }
@@ -637,6 +637,17 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: "";
+}
+button.btn-primary {
+  color: #fff;
+  background-color: rebeccapurple;
+  border: 1px solid purple;
+}
+button.btn-primary:hover {
+  color: #e6ffcc;
+  background-color: #E5CCFF;
+  border: 1px solid purple;
+
 }
 @media only screen and (max-width: 480px) {
   html {
