@@ -258,7 +258,12 @@ const SecondPage = () => (
     </ul>
     <p>
       To register with Cognitive Class and enroll in the Build Your Own Chatbot
-      course, click on the Start the Free Course button on the{' '}
+      course,{' '}
+      <strong>
+        click on the <span class="instruction">Start the Free Course</span>{' '}
+        button
+      </strong>{' '}
+      on the{' '}
       <a
         href="https://cognitiveclass.ai/courses/how-to-build-a-chatbot/"
         target="_blank"
@@ -266,13 +271,19 @@ const SecondPage = () => (
       >
         course page
       </a>
-      . You'll be asked to login (if you already have a Cognitive Class account)
-      or register with Cognitive Class and then verify your email (as usual with
-      most services). On the verification page, when you click the activation
-      link sent to you by email, you'll be prompted with the aforementioned
-      US$1200 special offer. You can safely ignore it for now. Later in the
-      workshop, we'll cover how to obtain the free WordPress testing environment
-      inside of the course you just enrolled in.
+      .
+    </p>
+    <p>
+      You'll be asked to login (if you already have a Cognitive Class account)
+      or{' '}
+      <strong>register with Cognitive Class and then verify your email</strong>{' '}
+      (as usual with most services). On the verification page, when you click
+      the activation link sent to you by email, you'll be prompted with the
+      aforementioned US$1200 special offer. You can safely ignore it for now.
+    </p>
+    <p>
+      Later in the workshop, we'll cover how to obtain the free WordPress
+      testing environment for the course you just enrolled in.
     </p>
     <p>
       This concludes your very first lab. On the next one, we'll start getting
