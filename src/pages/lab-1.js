@@ -178,12 +178,12 @@ const Lab1 = () => (
         <strong>
           Click on the <span className="instruction">Workspaces</span> tab
         </strong>{' '}
-        instead, as it's where we'll be creating chatbots. For quick access, you
-        may want to{' '}
+        instead, as it's where we'll be creating chatbots. For quick access in
+        future labs,{' '}
         <strong>
-          bookmark this <span className="instruction">Workspaces</span> page
+          bookmark the <span className="instruction">Workspaces</span> page
         </strong>{' '}
-        as well.
+        in your running instance of Watson Assistant.
       </li>
     </ol>
 
