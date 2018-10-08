@@ -1,9 +1,15 @@
 module.exports = {
-  pathPrefix: "/chatbot-workshop",
+  pathPrefix: '/chatbot-workshop',
   siteMetadata: {
     title: 'Chatbot Workshop Hands-On Labs',
   },
   plugins: [
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: ['gatsby-remark-copy-linked-files'],
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
