@@ -1,7 +1,7 @@
 import React from 'react'
 import courseImage from '../images/how-to-build-a-chatbot.png'
 import { Link } from 'gatsby'
-import { UncontrolledTooltip } from 'reactstrap'
+import { Alert, UncontrolledTooltip } from 'reactstrap'
 
 import Layout from '../components/layout'
 
@@ -306,10 +306,10 @@ const Lab1 = () => (
       There are no trick questions, so go with the answer that appears to be
       most logical to you.
     </p>
-    <blockquote>
+    <Alert color="success">
       This concludes your very first lab. On the next one, we'll start getting
       our hands dirty by building our first chatbot components.
-    </blockquote>
+    </Alert>
     <p style={{ textAlign: 'center', margin: '20px' }}>
       <Link className="btn btn-secondary" to="/">
         Back to Introduction

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { UncontrolledTooltip } from 'reactstrap'
+import { Alert, UncontrolledTooltip } from 'reactstrap'
+
 import Layout from '../components/layout'
 
 import showRecommendations from '../images/show-recommendations.png'
@@ -319,10 +320,10 @@ const Lab3 = () => (
       trick questions, so go with the answer that appears to make most sense to
       you.
     </p>
-    <blockquote>
+    <Alert color="success">
       Now that you know how to work with intents and entities, we can move on to
       the third component that make up chatbots. Namely, the dialog.
-    </blockquote>
+    </Alert>
     <p style={{ textAlign: 'center', margin: '20px' }}>
       <Link className="btn btn-secondary" to="/lab-2">
         Back to Lab 2

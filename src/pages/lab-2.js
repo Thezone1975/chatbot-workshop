@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { UncontrolledTooltip } from 'reactstrap'
+import { Alert, UncontrolledTooltip } from 'reactstrap'
 
 import Layout from '../components/layout'
 
@@ -386,13 +386,14 @@ const Lab2 = () => (
       At this point our chatbot understands basic chitchat and it detects when a
       question is about hours of operation vs when it's about location.
     </p>
-    <blockquote>
+    <Alert color="success">
       Having completed this lab, you're well on your way to becoming a buddying
       chatbot builder. Intents really are the most fundamental part of a
       chatbot. If you add the right intents to your chatbot, everything else
       will just fall into place easily. In the next lab, we'll qualify the user
       input further by taking a look at entities.
-    </blockquote>
+    </Alert>
+
     <p style={{ textAlign: 'center', margin: '20px' }}>
       <Link className="btn btn-secondary" to="/lab-1">
         Back to Lab 1
