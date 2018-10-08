@@ -149,6 +149,9 @@ const Lab2 = () => (
         especially on such a simple intent, but you should always{' '}
         <strong>include at least 5 examples</strong>. Ideally, more.
       </li>
+      <li>
+          Repeat the process to add the <code>#thank_you</code> and <code>#goodbyes</code> intents with at least 5 appropriate examples each.
+      </li>
     </ol>
 
     <h3>Task 3: Add intents from the Content Catalog</h3>
