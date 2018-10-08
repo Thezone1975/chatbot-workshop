@@ -118,7 +118,7 @@ const Lab2 = () => (
       Upon creation of the workspace, you'll find yourself on the{' '}
       <span className="instruction">Intents</span> section of your workspace.
       Here you can add intents in several ways. In this task, we'll focus on the
-      most straightfoward way. That is, manually adding intents.
+      most common way. That is, manually adding intents.
     </p>
 
     <ol>
