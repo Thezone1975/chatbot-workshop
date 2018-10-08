@@ -1,18 +1,24 @@
-Are you open on Sundays?,hours_info
-What are your hours?,hours_info
-What are your hours of operation?,hours_info
-What time are you open until?,hours_info
-Are you open on Saturdays?,hours_info
-Are you open on Christmas' Day?,hours_info
-When do you close,hours_info
-On what days are you closed?,hours_info
-When are you open,hours_info
 When do you open,hours_info
-Give me a list of locations,location_info
-List of location,location_info
-What are your locations?,location_info
-Where are you physically located?,location_info
-Where are your stores?,location_info
+When are you open,hours_info
+On what days are you closed?,hours_info
+When do you close,hours_info
+Are you open on Christmas' Day?,hours_info
+Are you open on Saturdays?,hours_info
+What time are you open until?,hours_info
+What are your hours of operation?,hours_info
+What are your hours?,hours_info
+Are you open on Sundays?,hours_info
+what are you hours of operation in Sydney,hours_info
+what are the hours of operation for your Auckland store,hours_info
 list of your location,location_info
-Locations in Canad,location_info
-what's the address of your Toronto store?,location_info
+Where are your stores?,location_info
+Where are you physically located?,location_info
+What are your locations?,location_info
+List of location,location_info
+Give me a list of locations,location_info
+Locations in New Zealand,location_info
+locations in Australia,location_info
+what's the address of your Auckland store?,location_info
+What's the address of your Sydney store?,location_info
+do you have a flower shop in Brisbane,location_info
+where is your Wellington store?,location_info
