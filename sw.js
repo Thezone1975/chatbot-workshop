@@ -11,8 +11,8 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("workbox-v3.5.0/workbox-sw.js");
-workbox.setConfig({modulePathPrefix: "workbox-v3.5.0"});
+importScripts("workbox-v3.6.2/workbox-sw.js");
+workbox.setConfig({modulePathPrefix: "workbox-v3.6.2"});
 
 workbox.core.setCacheNameDetails({prefix: "gatsby-plugin-offline"});
 
@@ -26,43 +26,43 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-ec152a0f195633b2db1f.js"
+    "url": "webpack-runtime-0963ffb424d8ebd2463d.js"
   },
   {
-    "url": "app-cea546264e40d15380a6.js"
+    "url": "app-d7712d872c95a256c6aa.js"
   },
   {
-    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-8b39cf320710777c95f1.js"
+    "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-0691004cd9de246c1542.js"
   },
   {
     "url": "index.html",
-    "revision": "b64a462ce41c9892f7b4e157ae7e5a27"
+    "revision": "18e7fc855bcfc829172e8850cfe73a11"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "082e89a1c9a180ef33695920ae1bfa4c"
+    "revision": "f59a586f85e8dbad062193ac320a4230"
   },
   {
-    "url": "0.82ae56be59b566278367.css"
+    "url": "0.95e52af2a90d25a145ee.css"
   },
   {
-    "url": "component---src-pages-index-js.bc148afe4722fc5b3ec3.css"
+    "url": "component---src-pages-index-js.54fa46d0f99f52b03d5f.css"
   },
   {
-    "url": "component---src-pages-index-js-c2df1228d05eccf42f15.js"
+    "url": "component---src-pages-index-js-f94d448e1098bec82fb1.js"
   },
   {
-    "url": "0-c1f18959077144e8ffb4.js"
+    "url": "0-db1f18f3493dc3f25f18.js"
   },
   {
     "url": "static/d/173/path---index-6a9-NZuapzHg3X9TaN1iIixfv1W23E.json",
     "revision": "c2508676a2f33ea9f1f0bf472997f9a0"
   },
   {
-    "url": "component---src-pages-404-js.bc148afe4722fc5b3ec3.css"
+    "url": "component---src-pages-404-js.54fa46d0f99f52b03d5f.css"
   },
   {
-    "url": "component---src-pages-404-js-8fc9ab153a74242399d6.js"
+    "url": "component---src-pages-404-js-8cb4d7d6b8bbfb3ed6ed.js"
   },
   {
     "url": "static/d/164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E.json",
