@@ -25,7 +25,8 @@ const Lab2 = () => (
         <span className="instruction">Content Catalog</span>;
       </li>
       <li>
-        Test intents in the <span className="instruction">Try it</span> panel.
+        Test intents in the <span className="instruction">Try it out</span>{' '}
+        panel.
       </li>
       <li>Import and export intents via CSV files;</li>
     </ol>
@@ -214,7 +215,7 @@ const Lab2 = () => (
       correctly recognize the right intent this time.
     </p>
     <p>
-      In the <span className="instruction">Try it</span> panel,{' '}
+      In the <span className="instruction">Try it out</span> panel,{' '}
       <strong>what happens if you try a nonsensical input?</strong> Randomly
       smash on the keyboard if you have to. Personally, I produced the
       beautiful, cat-walking-on-the-keyboard string{' '}
@@ -266,7 +267,7 @@ const Lab2 = () => (
       series of new intents relevant to common queries customers may have for
       the category of your choice. This isn't quite a pre-made chatbot but it's
       a nice starting point, that you can edit and adapt as needed. Feel free to
-      try them out in the <span className="instruction">Try it</span> panel.
+      try them out in the <span className="instruction">Try it out</span> panel.
     </p>
     <p>
       We are not going to use them for our Flower Shop Chatbot so click on the
@@ -375,7 +376,7 @@ const Lab2 = () => (
     </p>
     <p>
       Next, take them for a spin in the{' '}
-      <span className="instruction">Try it</span> panel.{' '}
+      <span className="instruction">Try it out</span> panel.{' '}
       <strong>Ask questions like you naturally would</strong> to enquire about
       store hours or address information. Does it recognize the intents we
       imported well enough? Train Watson further by adding your own examples
