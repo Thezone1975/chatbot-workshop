@@ -275,7 +275,9 @@ const Lab2 = () => (
       </strong>
       . (Make sure you keep the chitchat intents we created.) You'll notice how
       you were also given the option to export them to a CSV file, which is
-      quite useful when reusing intents across different chatbots.
+      quite useful when reusing intents across different chatbots. Go ahead and
+      <strong>export our chitchat intents</strong> to get some practice with
+      this feature.
     </p>
     <p>
       As you can see, it's very easy to create, modify, and delete intents,
