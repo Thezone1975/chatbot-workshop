@@ -172,14 +172,14 @@ const Lab2 = () => (
       <li>
         To test our intents,{' '}
         <strong>
-          click on the <span class="instruction">Try it</span> button
+          click on the <span className="instruction">Try it</span> button
         </strong>{' '}
         in the top right. A chat panel will appear where you can try user input
         and see how Watson analyses the user input and how our chatbot responds.
         We haven't provided responses yet (we'll do so in the Dialog lab) but we
         can still use it to test our intents. If you see a{' '}
-        <span class="instruction">Watson is training</span> message, please wait
-        for Watson to finish training on your intent examples.
+        <span className="instruction">Watson is training</span> message, please
+        wait for Watson to finish training on your intent examples.
       </li>
       <li>
         Go ahead and{' '}
@@ -214,7 +214,7 @@ const Lab2 = () => (
       correctly recognize the right intent this time.
     </p>
     <p>
-      In the <span class="instruction">Try it</span> panel,{' '}
+      In the <span className="instruction">Try it</span> panel,{' '}
       <strong>what happens if you try a nonsensical input?</strong> Randomly
       smash on the keyboard if you have to. Personally, I produced the
       beautiful, cat-walking-on-the-keyboard string{' '}
@@ -225,7 +225,7 @@ const Lab2 = () => (
       Watson will always try its hardest to match the user input to an existing
       intent, even if it's not a perfect match. But if its confidence level in
       the best matching intent is very low (below 20%), it will treat the input
-      as <span class="instruction">Irrelevant</span>, as it is likely not
+      as <span className="instruction">Irrelevant</span>, as it is likely not
       relevant to our set of intents.
     </p>
     <p>
@@ -234,7 +234,7 @@ const Lab2 = () => (
     </p>
     <p>
       To conclude this task, click on an existing intent of your choice in{' '}
-      <span class="instruction">Intents</span>, and{' '}
+      <span className="instruction">Intents</span>, and{' '}
       <strong>add one more example</strong> to it. Then, select the checkmark
       next to it, and you'll be given the option to delete it (or even move it
       to a different intent). Go ahead and <strong>delete that example</strong>{' '}
@@ -251,27 +251,29 @@ const Lab2 = () => (
       IBM provides you with some ready-made intents that might be relevant to
       the scope of your chatbot. To see what's available,{' '}
       <strong>
-        click on <span class="instruction">Content Catalog</span>
+        click on <span className="instruction">Content Catalog</span>
       </strong>{' '}
       within your workspace.
     </p>
     <p>
       Select one category of your choice (e.g., Banking) and then{' '}
       <strong>
-        click on the <span class="instruction">Add to workspace</span> button
+        click on the <span className="instruction">Add to workspace</span>{' '}
+        button
       </strong>{' '}
-      next to it. Switch back to the <span class="instruction">Intents</span>{' '}
-      section and you should see a series of new intents relevant to common
-      queries customers may have for the category of your choice. This isn't
-      quite a pre-made chatbot but it's a nice starting point, that you can edit
-      and adapt as needed. Feel free to try them out in the{' '}
-      <span class="instruction">Try it</span> panel.
+      next to it. Switch back to the{' '}
+      <span className="instruction">Intents</span> section and you should see a
+      series of new intents relevant to common queries customers may have for
+      the category of your choice. This isn't quite a pre-made chatbot but it's
+      a nice starting point, that you can edit and adapt as needed. Feel free to
+      try them out in the <span className="instruction">Try it</span> panel.
     </p>
     <p>
       We are not going to use them for our Flower Shop Chatbot so click on the
       checkmarks next to them and{' '}
       <strong>
-        press the <span class="instruction">Delete</span> button to remove them
+        press the <span className="instruction">Delete</span> button to remove
+        them
       </strong>
       . (Make sure you keep the chitchat intents we created.) You'll notice how
       you were also given the option to export them to a CSV file, which is
@@ -332,26 +334,26 @@ const Lab2 = () => (
         browser.
       </li>
       <li>
-        From the <span class="instruction">Intents</span> section of your
+        From the <span className="instruction">Intents</span> section of your
         workspace,{' '}
         <strong>
-          click on the <span class="instruction">Import intents</span> icon
+          click on the <span className="instruction">Import intents</span> icon
         </strong>{' '}
         next to the button to add intents.
       </li>
       <li>
         <strong>
-          Select <span class="instruction">Choose a file</span>
+          Select <span className="instruction">Choose a file</span>
         </strong>{' '}
         from the window that appears, and find the CSV file you just downloaded
         in the first step.
       </li>
       <li>
         <strong>
-          Click on the <span class="instruction">Import</span> button
+          Click on the <span className="instruction">Import</span> button
         </strong>
         . A report of what was imported will be shown as seen in the picture
-        below. Click on <span class="instruction">Done</span> to close the
+        below. Click on <span className="instruction">Done</span> to close the
         window.
       </li>
     </ol>
@@ -372,9 +374,10 @@ const Lab2 = () => (
       and the examples for each of them.
     </p>
     <p>
-      Next, take them for a spin in the <span class="instruction">Try it</span>{' '}
-      panel. <strong>Ask questions like you naturally would</strong> to enquire
-      about store hours or address information. Does it recognize the intents we
+      Next, take them for a spin in the{' '}
+      <span className="instruction">Try it</span> panel.{' '}
+      <strong>Ask questions like you naturally would</strong> to enquire about
+      store hours or address information. Does it recognize the intents we
       imported well enough? Train Watson further by adding your own examples
       directly from the Try it panel when it fails to intepret them correctly.
     </p>
