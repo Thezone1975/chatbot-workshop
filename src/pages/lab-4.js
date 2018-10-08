@@ -17,7 +17,8 @@ const Lab4 = () => (
       <li>Try out system entities;</li>
       <li>Import and export entities via CSV files;</li>
       <li>
-        Test entities in the <span className="instruction">Try it</span> panel;
+        Test entities in the <span className="instruction">Try it out</span>{' '}
+        panel;
       </li>
       <li>Take your second graded quiz.</li>
     </ol>
@@ -27,7 +28,7 @@ const Lab4 = () => (
 
     <h3>Task 2: Try out system entities</h3>
     <h3>Task 3: Import and export entities via CSV files</h3>
-    <h3>Task 4: Test entities in the Try it panel</h3>
+    <h3>Task 4: Test entities in the Try it out panel</h3>
 
     <h3>Task 5: Take the Module 2 Quiz</h3>
     <p>
