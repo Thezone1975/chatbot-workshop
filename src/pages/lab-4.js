@@ -64,11 +64,11 @@ const Lab4 = () => (
       </li>
       <li>
         <strong>
-          Open the <span className="instruction">Try it out</span> panel and
-          click on the <span className="instruction">Clear</span> link at the
-          top to start testing the chatbot from scratch. Notice anything
-          different this time around?
-        </strong>
+          Open the <span className="instruction">Try it out</span>{' '}
+        </strong>{' '}
+        panel and click on the <span className="instruction">Clear</span> link
+        at the top to start testing the chatbot from scratch. Notice anything
+        different this time around?
       </li>
       <li>
         Yes, we have a prompt! Unfortunately, the default phrasing is not very
@@ -234,7 +234,7 @@ const Lab4 = () => (
       </li>
       <li>
         <p>
-          With the <span className="instruction">Greetings</span> node selected,
+          With the <span className="instruction">Greetings</span> node selected,{' '}
           <strong>
             click on the <span className="instruction">Add node</span> button
           </strong>
