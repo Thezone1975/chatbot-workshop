@@ -284,8 +284,20 @@ const Lab4 = () => (
         response in each case.
       </li>
     </ol>
-
     <h3>Task 3: Add domain specific nodes</h3>
+    <p>
+      Chitchat interactions are necessary to make our chatbot more pleasant and
+      human-like. However, what makes the chatbot actually useful is its ability
+      to answer domain specific questions. That is, business related questions.
+    </p>
+    <p>
+      We defined intents for people enquiring about hours information and
+      addresses, and even created an entity to be able to provide
+      location-specific answers. However, much like the chitchat intents,
+      intents alone don't do much. We'll need to create nodes to handle these
+      two business specific intents.
+    </p>
+    <p>We'll need...</p>
     <h3>Task 4: Take the Module 3 Quiz</h3>
     <p>
       TODO: Explain the setup for the quiz, as it differs from this chatbot.
