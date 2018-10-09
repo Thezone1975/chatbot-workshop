@@ -75,12 +75,32 @@ const Lab3 = () => (
       </li>
       <li>
         You'll be prompted to enter entity values, and possible synonyms.{' '}
-        <strong>
-          Enter
-          <code>Auckland</code> and click{' '}
-          <span className="instruction">Add Value</span>
-        </strong>
-        .
+        <p>
+          <strong>
+            Enter
+            <code>Auckland</code> and click{' '}
+            <span className="instruction">Add Value</span>
+          </strong>
+          .
+        </p>
+        <p>
+          Generally speaking you won't need a synonym for cities, but you might
+          include some if the city has common nicknames, if people refer to your
+          store location by its street or neighbourhood in the city, and so on.
+          Small towns can also act as synonyms. After all, if people are asking
+          about your store in a nearby town, they might be happy with an answer
+          for the nearest city.
+        </p>
+        <p>
+          Essentially, a synonym is not necessarly the dictionary definition of
+          synonym. Though those are good candidates for synonyms as well, when
+          the context makes sense. For example, we could have an entity called{' '}
+          <code>@relationship</code> and the entity value{' '}
+          <code>@relationship:mother</code> with <code>mom</code> as a synonym
+          for that value. When the user enters a question including the word{' '}
+          <code>mom</code>, Watson will detect <code>@relationship:mother</code>{' '}
+          (the entity value for that synonym).
+        </p>
       </li>
       <li>
         <strong>Repeat the process</strong> for <code>Wellington</code>,{' '}
