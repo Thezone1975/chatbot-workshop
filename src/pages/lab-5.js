@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Alert, UncontrolledTooltip } from 'reactstrap'
+import { Alert } from 'reactstrap'
 
 import Layout from '../components/layout'
 import pluginActivation from '../images/plugin-activation.png'
@@ -8,6 +8,7 @@ import findingCredentials from '../images/finding-credentials.png'
 import copyingCredentials from '../images/copying-credentials.png'
 import buildIcon from '../images/build-icon.png'
 import deployedChatbot from '../images/deployed-chatbot.png'
+import pluginSections from '../images/plugin-sections.png'
 
 const Lab5 = () => (
   <Layout>
@@ -223,15 +224,53 @@ const Lab5 = () => (
         </p>
       </li>
     </ol>
-
-    <h3>Task 2: Familiarize yourself with the options</h3>
-
+    <h3>Task 2: Familiarize yourself with the plugin options</h3>
     <p>
-      In in your workspace, you can go back to developing your chatbot (from
-      your <span className="instruction">Deploy</span> section) by clicking on
-      the <span className="instruction">Build</span> icon.
+      The WordPress plugin for Watson Assistant offers many customizations
+      options. Some are merely cosmetic, while others significantly affect the
+      user experience for your customers.
+    </p>
+    <p>
+      Your second task for this lab is exploring these options. Inside the
+      WordPress Dashboard you'll notice that that the plugin has three main
+      sections as shown in the image below.
+    </p>
+    <p style={{ textAlign: 'center' }}>
+      <img
+        src={pluginSections}
+        alt="The three plugin sections"
+        title="The three plugin sections"
+        width="900"
+      />
+    </p>
+    <p>
+      We already looked at <span className="instruction">Set Up Chatbot</span>.
+      Take time to explore the many options available inside of{' '}
+      <span className="instruction">Customize Plugin</span> and{' '}
+      <span className="instruction">Advanced Features</span>.
+    </p>
+    <p>
+      Specifically, change some options in the tabs within{' '}
+      <span className="instruction">Customize Plugin</span> and watch your chat
+      box change. Then read the information provided in the{' '}
+      <span className="instruction">Advanced Features</span> section to
+      familiarize yourself with more advanced options.
+    </p>
+    <p>
+      Some of the options are for features we haven't discussed yet or are out
+      of scope for this workshop. But it's good to know what options the plugin
+      has to offer and, as always, if you have any questions feel free to ask
+      me.
     </p>
 
+    <h3>Side note</h3>
+
+    <p>
+      Note that in your workspace, you can go back to developing your chatbot
+      (from your <span className="instruction">Credentials</span> page) by
+      clicking on the <span className="instruction">Build</span> icon as shown
+      below.
+    </p>
     <p style={{ textAlign: 'center' }}>
       <img
         src={buildIcon}
@@ -240,7 +279,6 @@ const Lab5 = () => (
         width="900"
       />
     </p>
-
     <Alert color="success">
       We now know how to create basic chatbots and deploy them for our customers
       to use. The next step is to make our chatbot better and in the process,
