@@ -353,6 +353,7 @@ nav ul {
 .nav-link {
   color: rebeccapurple;
   font-weight: bold;
+  font-size: 0.75rem;
 }
 .nav-link:hover {
   color: #e6ffcc;
