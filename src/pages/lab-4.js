@@ -13,7 +13,7 @@ import locationInformation from '../images/location-information.png'
 
 const Lab4 = () => (
   <Layout>
-    <h2>Lab 4: Dialog Flow</h2>
+    <h2>Lab 4: Defining the Dialog</h2>
     <p>
       With intents and entities under our belts, we can finally look at the
       third component: the dialog.
@@ -31,10 +31,11 @@ const Lab4 = () => (
         Create a useful chatbot that leverages the intents and entities we
         created so far;
       </li>
-      <li>Better understand how the dialog flow and responses work.</li>
+      <li>Understand how the Dialog flow and responses work;</li>
+      <li>Understand children nodes;</li>
       <li>
         Test our chatbot in the <span className="instruction">Try it out</span>{' '}
-        panel.
+        panel;
       </li>
       <li>Take your third graded quiz.</li>
     </ol>
@@ -67,15 +68,15 @@ const Lab4 = () => (
       </li>
       <li>
         <strong>
-          Open the <span className="instruction">Try it out</span>{' '}
+          Open the <span className="instruction">Try it out</span> panel
         </strong>{' '}
-        panel and click on the <span className="instruction">Clear</span> link
-        at the top to start testing the chatbot from scratch. Notice anything
-        different this time around?
+        and click on the <span className="instruction">Clear</span> link at the
+        top to start testing the chatbot from scratch. Notice anything different
+        this time around?
       </li>
       <li>
         Yes, we have a prompt! Unfortunately, the default phrasing is not very
-        user friendly. Let's change it. Select the{' '}
+        user friendly. <strong>Let's change it.</strong> Select the{' '}
         <span className="instruction">Welcome</span> node and edit the response
         to say{' '}
         <code>
@@ -87,21 +88,26 @@ const Lab4 = () => (
       </li>
       <li>
         <p>
-          Click the <span className="instruction">Clear</span> link in the{' '}
-          <span className="instruction">Try it out</span> panel once again to
-          see the change take effect.
+          <strong>
+            Click on the <span className="instruction">Clear</span> link
+          </strong>{' '}
+          in the <span className="instruction">Try it out</span> panel once
+          again to see the change take effect.
         </p>
         <p>
-          Great. We added a bit of antropomorphization, set the expectations
-          right by coming clean about our robot nature, and offered some
-          guidance to the user, in terms of the scope offered by our chatbot.
+          Great. We added a bit of anthropomorphization, set the expectations
+          right by coming clean about our robotic nature, and offered some
+          guidance to the user in terms of the scope offered by our chatbot.
         </p>
       </li>
       <li>
-        Now try replying <code>hello</code> in the{' '}
-        <span className="instruction">Try it out</span> panel. What happens?
-        Watson recognized the right intent but doesn't have a node to handle
-        greetings, so the fallback node{' '}
+        Now{' '}
+        <strong>
+          try replying <code>hello</code>
+        </strong>{' '}
+        in the <span className="instruction">Try it out</span> panel. What
+        happens? Watson recognized the right intent but doesn't have a node to
+        handle greetings, so the fallback node{' '}
         <span className="instruction">Anything else</span> was executed. We'll
         remedy to this in the next task.
       </li>
@@ -315,18 +321,25 @@ const Lab4 = () => (
         . This will create an empty node just below the first node.
       </li>
       <li>
-        Set the node name to <code>Hours of Operation</code> and use{' '}
-        <code>#hours_info</code> for the condition of the node. This will ensure
-        that the node will be executed when the user is enquiring about shop
-        hours.
+        <strong>
+          Set the node name to <code>Hours of Operation</code>
+        </strong>{' '}
+        and{' '}
+        <strong>
+          use <code>#hours_info</code> for the condition
+        </strong>{' '}
+        of the node. This will ensure that the node will be executed when the
+        user is enquiring about shop hours.
       </li>
       <li>
         <p>
-          In the response, enter{' '}
-          <code>
-            Our hours of operations are listed on &lt;a
-            href="https://example.org/hours/"&gt;this page&lt;/a&gt;.
-          </code>
+          <strong>
+            In the response, enter{' '}
+            <code>
+              Our hours of operations are listed on &lt;a
+              href="https://example.org/hours/"&gt;this page&lt;/a&gt;.
+            </code>
+          </strong>
           Next, head over to the <span className="instruction">Try it out</span>{' '}
           panel and test that it works by asking{' '}
           <code>when is your Auckland store open?</code> as shown in the picture
@@ -350,9 +363,9 @@ const Lab4 = () => (
     <p>
       After all, the user asked us about a specific location. We even detected
       it with the <code>@location</code> entity. And then proceeded to ignore
-      it, opting instead for a generic answer. We can do better than that. Close
-      the <span className="instruction">Try it out</span> panel to gain some
-      breathing room as we work on the dialog.
+      it, opting instead for a generic answer. We can do better than that.
+      (Close the <span className="instruction">Try it out</span> panel to gain
+      some breathing room as we work on the dialog.)
     </p>
     <p>
       In order to handle this case properly, we'll have to consider two possible
@@ -368,37 +381,47 @@ const Lab4 = () => (
     <h4>Create the Location Provided child node</h4>
     <ol>
       <li>
-        Delete the response from our{' '}
-        <span className="instruction">Hours of Operation</span> node by clicking
-        on the bin icon in the response section in the{' '}
+        <strong>
+          Delete the response from our{' '}
+          <span className="instruction">Hours of Operation</span> node
+        </strong>{' '}
+        by clicking on the bin icon in the response section in the{' '}
         <span className="instruction">Then respond with:</span> section. We do
         that because we don't want this parent node to provide the answer. We'll
         let the children node decide what's the right response.
       </li>
       <li>
         With the <span className="instruction">Hours of Operation</span> node
-        selected, click on <span className="instruction">Add child node</span>.
-        This creates the first child node. We'll use it for the case of the user
-        providing us a specific location. So go ahead and name it{' '}
+        selected,{' '}
+        <strong>
+          click on <span className="instruction">Add child node</span>
+        </strong>
+        . This creates the first child node. We'll use it for the case of the
+        user providing us a specific location. So go ahead and name it{' '}
         <code>Location Provided</code>.
       </li>
       <li>
-        Set the condition to <code>@location</code>, as we want to execute this
-        node only if the user is enquiring about hours of operation and a
-        specific location was given.
+        <strong>
+          Set the condition to <code>@location</code>
+        </strong>
+        , as we want to execute this node only if the user is enquiring about
+        hours of operation and a specific location was given.
       </li>
       <li>
         We need a way to offer a different response for each city, so we need to
-        enable <span className="instruction">Multiple responses</span>. To do
-        so, click on the <span className="instruction">Customize</span> link
-        within our child node. Switch on{' '}
+        <strong>
+          enable <span className="instruction">Multiple responses</span>
+        </strong>
+        . To do so, click on the <span className="instruction">Customize</span>{' '}
+        link within our child node. Switch on{' '}
         <span className="instruction">Multiple responses</span> and click{' '}
         <span className="instruction">Apply</span>. You'll notice that now we
         have the ability to set a condition before a response is issued.
       </li>
       <li>
         <p>
-          Go ahead and create a series of responses for each different city. In
+          Go ahead and{' '}
+          <strong>create a series of responses, one for each city</strong>. In
           the <span className="instruction">If bot recognizes</span> column
           you'll want to enter the specific city (e.g.,{' '}
           <code>@location:Auckland</code>) and in the response the hours of our
@@ -408,8 +431,8 @@ const Lab4 = () => (
             except statutory holidays.
           </code>
           ) Do the same for every other location we have (come up with fictional
-          hours of operation, it is after all a fictional chain of shops). The
-          end result is shown in the image below.
+          hours of operation, it is after all a fictional chain). The end result
+          is shown in the image below.
         </p>
         <p style={{ textAlign: 'center' }}>
           <img
@@ -438,7 +461,7 @@ const Lab4 = () => (
         statutory holidays.
       </code>{' '}
       Of course, if stores have different hours of operation, we have no choice
-      but opt for the mulitple response approach like we did here.
+      but to opt for the mulitple response approach as we did here.
     </p>
     <h4>Create the No Location child node</h4>
     <p>
@@ -449,35 +472,40 @@ const Lab4 = () => (
     <ol>
       <li>
         With the <span className="instruction">Location Provided</span> node
-        selected, click the <span className="instruction">Add node</span> button
+        selected,{' '}
+        <strong>
+          click the <span className="instruction">Add node</span> button
+        </strong>
         to add a sibiling node below it.
       </li>
       <li>
         <p>
-          Call this node <code>No Location</code>. Set the condition to{' '}
-          <code>true</code>. Here is why. When the user asks{' '}
-          <em>What are your hours of operation?</em> the{' '}
+          <strong>
+            Call this node <code>No Location</code>.
+          </strong>{' '}
+          Set the condition to <code>true</code>. Here is why. When the user
+          asks <em>What are your hours of operation?</em> the{' '}
           <code>#hours_info</code> intent is detected, so we enter the parent
           node <span className="instruction">Hours of Operation</span>. The{' '}
           <span className="instruction">Location Provided</span> child node is
           then first evaluated. We fail its <code>@location</code> condition,
           because the user didn't specify any location, so the next child node
           is considered for execution. Since the condition is set to{' '}
-          <code>true</code> it will always be executed. This is exactly what we
-          want to happen since at this point we know the user wants to know the
-          hours of operation but no location was provided. (If we left the
-          condition empty, we'd get an error because no children node handled
+          <code>true</code> it will be executed. This is exactly what we want to
+          happen since at this point we know the user wants to know the hours of
+          operation but no location was provided. (If we left the condition
+          empty, we'd get an error because no children node was able to match
           the user request.)
         </p>
         <p>
           Note also that this is why the order of nodes can matter (it didn't
-          for chitchat nodes, but it does here). If we revers the order and
-          place the <span className="instruction">No Location</span> node first,
-          its <code>true</code> condition is always satisfied and the{' '}
-          <span className="instruction">Location Provided</span> node will be
-          overshadowed and never executed. We always want to place the most
+          for chitchat nodes, but it does here). If we were to reverse the order
+          and place the <span className="instruction">No Location</span> node
+          first, its <code>true</code> condition would always be satisfied and
+          the <span className="instruction">Location Provided</span> node will
+          be overshadowed and never executed. We always want to place the most
           specific condition at the top, with the more generic condition nodes
-          at the bottom as catch all.
+          at the bottom as a catch all.
         </p>
       </li>
       <li>
@@ -495,10 +523,14 @@ const Lab4 = () => (
         notice that the <span className="instruction">And finally</span> section
         is set to <span className="instruction">Wait for user input</span>. This
         is not what we want. The user has already provided us with the question
-        and we haven't responded yet. Change this section of{' '}
-        <span className="instruction">Hours of Operation</span> to{' '}
-        <span className="instruction">Skip user input</span>. This will hand off
-        the excution to the two children nodes we just created.
+        and we haven't responded yet.{' '}
+        <strong>
+          Change this section of{' '}
+          <span className="instruction">Hours of Operation</span> to{' '}
+          <span className="instruction">Skip user input</span>.{' '}
+        </strong>{' '}
+        This will hand off the excution to the two children nodes we just
+        created.
       </li>
       <li>
         If you click on the <span className="instruction">Try it</span> button
@@ -521,9 +553,9 @@ const Lab4 = () => (
     <p>
       Our little chatbot is getting more useful by the minute. We now need to
       handle location address requests. And guess what? It's no different in
-      terms of how this scenario operates. We'll have a parent node and two
-      children to distinguish when the location address request was specific to
-      a city or just a generic one.
+      terms of how this works. We'll have a parent node and two children to
+      distinguish when the location address request was specific to a city or
+      just a generic one.
     </p>
     <p>
       Repetition is always useful to solidify one's understanding, so let's do
@@ -532,26 +564,33 @@ const Lab4 = () => (
     <ol>
       <li>
         Select the <span className="instruction">Hours of Operation</span> node
-        and click on <span className="instruction">Add node</span> to create a
-        sibiling node below it. Call this node <code>Location Information</code>{' '}
-        (or whatever you see fit) and set the condition to the{' '}
-        <code>#location_info</code> intent. Delete the text response as the
-        children node we'll create will handle the response.
+        and{' '}
+        <strong>
+          click on <span className="instruction">Add node</span> to create a
+          sibiling node
+        </strong>{' '}
+        below it. Call this node <code>Location Information</code> (or whatever
+        you see fit) and set the condition to the <code>#location_info</code>{' '}
+        intent. Delete the text response as the children node we'll create will
+        handle the response.
       </li>
       <li>
         With the <span className="instruction">Location Information</span> node
         selected, click <span className="instruction">Add child node</span>.
-        Call this first child node, <code>Location Provided</code> and set the
-        condition to <code>@location</code> as we want to respond only when the
-        user provided a location. Click on the{' '}
-        <span className="instruction">Customize</span> link and enable{' '}
+        <strong>
+          Call this first child node, <code>Location Provided</code> and set the
+          condition to <code>@location</code>
+        </strong>{' '}
+        as we want to respond only when the user provided a location. Click on
+        the <span className="instruction">Customize</span> link and enable{' '}
         <span className="instruction">Multiple responses</span>.
       </li>
       <li>
         <p>
-          Assign one response per city, providing a fictious address for each
-          (e.g., <code>Our Auckland store is located at 123 Queen St.</code>) as
-          shown in the picture below.
+          <strong>Assign one response per city</strong>, providing a fictious
+          address for each (e.g.,{' '}
+          <code>Our Auckland store is located at 123 Queen St.</code>) as shown
+          in the picture below.
         </p>
         <p style={{ textAlign: 'center' }}>
           <img
@@ -564,15 +603,21 @@ const Lab4 = () => (
       </li>
       <li>
         With the <span className="instruction">Location Provided</span> node
-        under <span className="instruction">Location Information</span>,
-        selected, go ahead and click{' '}
-        <span className="instruction">Add node</span> to create a sibiling
-        beneath. (Depending on your resolution, you might have to scroll up to
-        find the button. Alternatively, you can click on the three dots icon of
-        a node to create nodes relative to the selected node.)
+        (under <span className="instruction">Location Information</span>
+        ), selected, go ahead and{' '}
+        <strong>
+          click <span className="instruction">Add node</span> to create a
+          sibiling beneath
+        </strong>
+        . (Depending on your resolution, you might have to scroll up to find the
+        button. Alternatively, you can click on the three dots icon of a node to
+        create nodes relative to the selected one.)
       </li>
       <li>
-        Call it <code>No Location</code>, set the condition to <code>true</code>{' '}
+        <strong>
+          Call it <code>No Location</code>, set the condition to{' '}
+          <code>true</code>
+        </strong>{' '}
         and for the generic response enter something like:{' '}
         <code>
           Our store locations are listed on our site on the &lt;a
@@ -582,10 +627,12 @@ const Lab4 = () => (
       <li>
         <p>
           As in the previous section, we must ensure that the parent node (i.e.,{' '}
-          <span className="instruction">Location Information</span>
-          )doesn't ask for further input but instead hands off the execution to
-          its children nodes. So select that parent node, and change the final
-          actions to <code>Skip user input</code>.
+          <span className="instruction">Location Information</span>) doesn't ask
+          for further input before we have even responded, but instead hands off
+          the execution to its children nodes. So select that parent node, and{' '}
+          <strong>
+            change the final actions to <code>Skip user input</code>.
+          </strong>
         </p>
         <p>
           The final result will look remarkably similar to the previous
@@ -603,29 +650,37 @@ const Lab4 = () => (
       <li>
         Open the <span className="instruction">Try it out</span> panel, press{' '}
         <span className="instruction">Clear</span> to start a new conversation,
-        and test out a full conversation a user might have with our chatbot.
-        Enter in succession the following input.
-        <ol>
+        and <strong>test out a full conversation</strong> a user might have with
+        our chatbot. Enter in succession the following input.
+        <ol style={{ listStyle: 'none' }}>
           <li>
             <code>hello</code>
           </li>
-          <li>where are you stores located?</li>
-          <li>what are your hours of operations in Auckland?</li>
-          <li>thank you</li>
-          <li>bye</li>
+          <li>
+            <code>where are you stores located?</code>
+          </li>
+          <li>
+            <code>what are your hours of operations in Auckland?</code>
+          </li>
+          <li>
+            <code>thank you</code>
+          </li>
+          <li>
+            <code>bye</code>
+          </li>
         </ol>
       </li>
     </ol>
     <p>
       Pretty neat, eh? We can of course flesh out our chatbot much more, but if
-      you got to this point, you have mastered all you realistically need to
-      create something useful that cuts down of many common enquires from your
-      users.
+      you got to this point, you have mastered the fundamentals of what you need
+      to know to create something useful that cuts down of many common enquires
+      from your customers.
     </p>
     <p>
-      We'll soon see how to deploy it, and then tackle more advanced topics in
-      the process of improving the chatbots's usefuleness and apparent degree of
-      intelligence..
+      We'll soon see how to deploy the chatbot, and then tackle more advanced topics in
+      the process of improving the chatbot's usefuleness and apparent degree of
+      intelligence.
     </p>
     <h3>Task 5: Take the Module 3 Quiz</h3>
     <p>
