@@ -336,9 +336,8 @@ const Lab3 = () => (
         find the <span className="instruction">Graded Review Questions</span>{' '}
         inside Module 2. Take the quiz
       </strong>
-      , just like you did in the previous module. As a reminder, there are no
-      trick questions, so go with the answer that appears to make most sense to
-      you.
+      , just like you did in the first module. As a reminder, there are no trick
+      questions, so go with the answer that appears to make most sense to you.
     </p>
     <Alert color="success">
       Now that you know how to work with intents and entities, we can move on to
