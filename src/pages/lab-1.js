@@ -1,5 +1,6 @@
 import React from 'react'
 import courseImage from '../images/how-to-build-a-chatbot.png'
+import serviceCreation from '../images/create-service.png'
 import { Link } from 'gatsby'
 import { Alert, UncontrolledTooltip } from 'reactstrap'
 
@@ -13,7 +14,6 @@ const Lab1 = () => (
       Before we can begin to actually build chatbots, however, we'll need to
       take care of a couple of prerequisites for this workshop.
     </p>
-
     <h3>What you will accomplish</h3>
     <p>In this lab you will:</p>
     <ol>
@@ -26,6 +26,11 @@ const Lab1 = () => (
       <li>Take your first graded quiz.</li>
     </ol>
     <h3>Task 1: Register with IBM Cloud</h3>
+    <Alert color="info">
+      If you already registered with IBM Cloud by following the instructions
+      sent to you prior to the workshop, you can safely skip this first task and{' '}
+      <a href="#task2">jump to Task 2</a>.
+    </Alert>
     <p>
       To create chatbots, we'll use IBM Watson Assistant, an easy to use and
       powerful chatbot service offered on the IBM Cloud. So we need to make sure
@@ -62,10 +67,33 @@ const Lab1 = () => (
         folder as well, if you don't see the email after a few minutes).
       </li>
       <li>
-        At this point you'll be logged in with your IBM ID. The next step is to
-        sign up for IBM Cloud, if you haven't done so already in the past. If
-        you don't have an IBM Cloud account yet, you'll be presented with a page
-        asking you to sign up.{' '}
+        <p>
+          Upon successful verification of your email, you'll see a{' '}
+          <span className="instruction">Log In</span> button.{' '}
+          <strong>Click on it and accept the privacy notices</strong>. At this
+          point you'll be logged in with your IBM ID. If you're prompted to
+          create a Watson Assistant service on a page similar to the image
+          below, you are all set and can{' '}
+          <strong>
+            close your browser tab and jump to <a href="#task2">Task 2</a>.
+          </strong>{' '}
+          (Technically, you could create a service directly here, skipping the
+          first two steps of Task 2, but I want to show you how to reach this
+          creation page for future reference.)
+        </p>
+        <p style={{ textAlign: 'center' }}>
+          <img
+            src={serviceCreation}
+            alt="Creating a Watson Assistant service"
+            title="Creating a Watson Assistant service"
+            width="700"
+          />
+        </p>
+      </li>
+      <li>
+        If you weren't redirected to the service creation page, you'll be
+        prompted to create an IBM Cloud account, and presented with a page to do
+        so.{' '}
         <strong>
           Click on the <span className="instruction">Sign Up</span> button
         </strong>{' '}
@@ -113,30 +141,19 @@ const Lab1 = () => (
       </li>
       <li>You're now logged in and should see your (empty) dashboard.</li>
     </ol>
-    <p>
-      You can access this page at any time by logging in on the ibm.com/cloud
-      site, but I highly recommend that you just{' '}
-      <strong>
-        bookmark the{' '}
-        <a
-          href="https://console.bluemix.net/dashboard/apps/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          dashboard page
-        </a>
-      </strong>{' '}
-      instead. It will give you quick access to seeing and managing all the
-      resources you created inside of your IBM Cloud account.
-    </p>
-
-    <h3>Task 2: Create an instance of Watson Assistant</h3>
-
+    <h3 id="task2">Task 2: Create an instance of Watson Assistant</h3>
     <p>
       Now that you have an IBM Cloud account, it's time to create an instance of
-      IBM Watson Assistant. You can do so by following these simple steps:
+      IBM Watson Assistant. Visit your{' '}
+      <a
+        href="https://console.bluemix.net/dashboard/apps/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        dashboard
+      </a>{' '}
+      and then follow these simple steps:
     </p>
-
     <ol>
       <li>
         <strong>
@@ -146,18 +163,24 @@ const Lab1 = () => (
         on your dashboard.
       </li>
       <li>
-        <strong>Search for Watson Assistant</strong> in the search field or
-        select it from the <span className="instruction">AI</span> category of
-        the catalog and <strong>click on it</strong>.
+        <strong>Search for Watson Assistant</strong> in the search field or find
+        it in the <span className="instruction">AI</span> category of the
+        catalog and then <strong>click on it</strong>.
       </li>
       <li>
-        You should see a Watson Assistant (formerly Conversation) creation page.
-        You can leave everything to default, or{' '}
-        <strong>customize the name to your liking</strong>.
+        You should see a Watson Assistant (formerly Conversation) creation page
+        similar to the image I showed you above. You can leave everything to
+        default, or <strong>customize the name to your liking</strong>. If you
+        are in New Zealand or Australia,{' '}
+        <strong>
+          switch the region/location to{' '}
+          <span className="instruction">Sydney</span>
+        </strong>{' '}
+        for optimal performance.
       </li>
       <li>
         Take note of the differences between the free Lite plan (which you'll be
-        using) and the Standard Plan.
+        using) and the Standard Plan, towards the end of the page.
       </li>
       <li>
         <strong>
@@ -187,6 +210,28 @@ const Lab1 = () => (
       </li>
     </ol>
 
+    <p>
+      You can always create new services (Watson Assistant or any other service
+      available in the catalog) by clicking on the{' '}
+      <span className="instruction">Create resource</span> button on your
+      dashboard. Your dashboard is accessible at any time by logging in on the
+      ibm.com/cloud site, but it takes a few clicks to get there, so I highly
+      recommend that you just{' '}
+      <strong>
+        bookmark the{' '}
+        <a
+          href="https://console.bluemix.net/dashboard/apps/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          dashboard page
+        </a>{' '}
+        now{' '}
+      </strong>{' '}
+      instead. It will give you quick access to seeing and managing all the
+      resources you created inside of your IBM Cloud account. If you go there
+      now, you should see the Watson Assistant service you just created.
+    </p>
     <h3>Task 3: Enroll in the Chatbot Course</h3>
     <p>
       <a
@@ -277,7 +322,7 @@ const Lab1 = () => (
       .
     </p>
     <p>
-      You'll be asked to login (if you already have a Cognitive Class account)
+      You'll be asked to log in (if you already have a Cognitive Class account)
       or{' '}
       <strong>register with Cognitive Class and then verify your email</strong>{' '}
       (as usual with most services). On the verification page, when you click
