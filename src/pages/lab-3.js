@@ -120,7 +120,7 @@ const Lab3 = () => (
             src={showRecommendations}
             alt="Synonym recommendations offered by Watson"
             title="Synonym recommendations offered by Watson"
-            width="700"
+            width="900"
           />
         </p>
       </li>

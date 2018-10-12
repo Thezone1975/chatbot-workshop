@@ -86,7 +86,7 @@ const Lab1 = () => (
             src={serviceCreation}
             alt="Creating a Watson Assistant service"
             title="Creating a Watson Assistant service"
-            width="700"
+            width="900"
           />
         </p>
       </li>

@@ -209,7 +209,7 @@ const Lab2 = () => (
         src={tryItOut}
         alt="Manually assigning an intent to a test input"
         title="Manually assigning an intent to a test input"
-        width="700"
+        width="900"
       />
     </p>
     <p>
@@ -371,7 +371,7 @@ const Lab2 = () => (
         src={successfulImport}
         alt="A successful import of intents from CSV files"
         title="A successful import of intents from CSV files"
-        width="700"
+        width="900"
       />
     </p>
     <p>
