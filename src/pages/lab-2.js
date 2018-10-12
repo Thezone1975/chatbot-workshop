@@ -193,7 +193,11 @@ const Lab2 = () => (
       If Watson miscategorized one example, feel free to click on the arrow (V)
       next to the detected intent to assign a different intent. This will add
       your question as an example for the intent automatically for you, further
-      training Watson.
+      training Watson. (
+      <strong>
+        Try it with <code>Kia Ora</code>
+      </strong>
+      .)
     </p>
     <p>
       You'll see a message indicating that the intent correction was submitted
