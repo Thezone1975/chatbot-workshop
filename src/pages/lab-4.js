@@ -8,6 +8,8 @@ import chitchat from '../images/chitchat-nodes.png'
 import simpleHours from '../images/simple-hours.png'
 import hoursChildNode from '../images/hours-location-provided.png'
 import hoursOfOperation from '../images/hours-of-operation.png'
+import locationProvidedNode from '../images/location-provided-child-node.png'
+import locationInformation from '../images/location-information.png'
 
 const Lab4 = () => (
   <Layout>
@@ -516,6 +518,115 @@ const Lab4 = () => (
       />
     </p>
     <h3>Task 4: Respond to location information</h3>
+    <p>
+      Our little chatbot is getting more useful by the minute. We now need to
+      handle location address requests. And guess what? It's no different in
+      terms of how this scenario operates. We'll have a parent node and two
+      children to distinguish when the location address request was specific to
+      a city or just a generic one.
+    </p>
+    <p>
+      Repetition is always useful to solidify one's understanding, so let's do
+      this step by step.
+    </p>
+    <ol>
+      <li>
+        Select the <span className="instruction">Hours of Operation</span> node
+        and click on <span className="instruction">Add node</span> to create a
+        sibiling node below it. Call this node <code>Location Information</code>{' '}
+        (or whatever you see fit) and set the condition to the{' '}
+        <code>#location_info</code> intent. Delete the text response as the
+        children node we'll create will handle the response.
+      </li>
+      <li>
+        With the <span className="instruction">Location Information</span> node
+        selected, click <span className="instruction">Add child node</span>.
+        Call this first child node, <code>Location Provided</code> and set the
+        condition to <code>@location</code> as we want to respond only when the
+        user provided a location. Click on the{' '}
+        <span className="instruction">Customize</span> link and enable{' '}
+        <span className="instruction">Multiple responses</span>.
+      </li>
+      <li>
+        <p>
+          Assign one response per city, providing a fictious address for each
+          (e.g., <code>Our Auckland store is located at 123 Queen St.</code>) as
+          shown in the picture below.
+        </p>
+        <p style={{ textAlign: 'center' }}>
+          <img
+            src={locationProvidedNode}
+            alt="Our child node to handle hours of operations specific to a location"
+            title="Our child node to handle hours of operations specific to a location"
+            width="900"
+          />
+        </p>
+      </li>
+      <li>
+        With the <span className="instruction">Location Provided</span> node
+        under <span className="instruction">Location Information</span>,
+        selected, go ahead and click{' '}
+        <span className="instruction">Add node</span> to create a sibiling
+        beneath. (Depending on your resolution, you might have to scroll up to
+        find the button. Alternatively, you can click on the three dots icon of
+        a node to create nodes relative to the selected node.)
+      </li>
+      <li>
+        Call it <code>No Location</code>, set the condition to <code>true</code>{' '}
+        and for the generic response enter something like:{' '}
+        <code>
+          Our store locations are listed on our site on the &lt;a
+          href="https://example.org/stores"&gt;stores page&lt;/a&gt;.
+        </code>
+      </li>
+      <li>
+        <p>
+          As in the previous section, we must ensure that the parent node (i.e.,{' '}
+          <span className="instruction">Location Information</span>
+          )doesn't ask for further input but instead hands off the execution to
+          its children nodes. So select that parent node, and change the final
+          actions to <code>Skip user input</code>.
+        </p>
+        <p>
+          The final result will look remarkably similar to the previous
+          scenario, as shown below.
+        </p>
+        <p style={{ textAlign: 'center' }}>
+          <img
+            src={locationInformation}
+            alt="Our location information node structure"
+            title="Our location information node structure"
+            width="900"
+          />
+        </p>
+      </li>
+      <li>
+        Open the <span className="instruction">Try it out</span> panel, press{' '}
+        <span className="instruction">Clear</span> to start a new conversation,
+        and test out a full conversation a user might have with our chatbot.
+        Enter in succession the following input.
+        <ol>
+          <li>
+            <code>hello</code>
+          </li>
+          <li>where are you stores located?</li>
+          <li>what are your hours of operations in Auckland?</li>
+          <li>thank you</li>
+          <li>bye</li>
+        </ol>
+      </li>
+    </ol>
+    <p>
+      Pretty neat, eh? We can of course flesh out our chatbot much more, but if
+      you got to this point, you have mastered all you realistically need to
+      create something useful that cuts down of many common enquires from your
+      users.
+    </p>
+    <p>
+      We'll soon see how to deploy it, and then tackle more advanced topics in
+      the process of improving the chatbots's usefuleness and apparent degree of
+      intelligence..
+    </p>
     <h3>Task 5: Take the Module 3 Quiz</h3>
     <p>
       Head over to the{' '}
