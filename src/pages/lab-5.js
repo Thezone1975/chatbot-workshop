@@ -7,6 +7,7 @@ import pluginActivation from '../images/plugin-activation.png'
 import findingCredentials from '../images/finding-credentials.png'
 import copyingCredentials from '../images/copying-credentials.png'
 import buildIcon from '../images/build-icon.png'
+import deployedChatbot from '../images/deployed-chatbot.png'
 
 const Lab5 = () => (
   <Layout>
@@ -206,10 +207,20 @@ const Lab5 = () => (
         note of earlier on.
       </li>
       <li>
-        If you see a chatbot pop up greeting you with the prompt you defined,
-        congratulations, <strong>you just deployed your chatbot.</strong> That
-        was quite straightforward, wasn't it? Go ahead and{' '}
-        <strong>test your chatbot directly through this chat box.</strong>
+        <p>
+          If you see a chatbot pop up greeting you with the prompt you defined,
+          congratulations, <strong>you just deployed your chatbot.</strong> That
+          was quite straightforward, wasn't it? Go ahead and{' '}
+          <strong>test your chatbot directly through this chat box.</strong>
+        </p>
+        <p style={{ textAlign: 'center' }}>
+          <img
+            src={deployedChatbot}
+            alt="The chatbot deployed on a WordPress site"
+            title="The chatbot deployed on a WordPress site"
+            width="900"
+          />
+        </p>
       </li>
     </ol>
 
