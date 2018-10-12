@@ -439,9 +439,11 @@ const Lab4 = () => (
       but opt for the mulitple response approach like we did here.
     </p>
     <h4>Create the No Location child node</h4>
-    We now have have a child node to handle users asking about hours of
-    operation for a specific location. However, we also need a child node to
-    handle the case in which the user didn't specify a location.
+    <p>
+      We now have have a child node to handle users asking about hours of
+      operation for a specific location. However, we also need a child node to
+      handle the case in which the user didn't specify a location.
+    </p>
     <ol>
       <li>
         With the <span className="instruction">Location Provided</span> node
@@ -449,20 +451,32 @@ const Lab4 = () => (
         to add a sibiling node below it.
       </li>
       <li>
-        Call this node <code>No Location</code>. Set the condition to{' '}
-        <code>true</code>. Here is why. When the user asks{' '}
-        <em>What are your hours of operation?</em> the <code>#hours_info</code>{' '}
-        intent is detected, so we enter the parent node{' '}
-        <span className="instruction">Hours of Operation</span>. The{' '}
-        <span className="instruction">Location Provided</span> child node is
-        then first evaluated. We fail its <code>@location</code> condition,
-        because the user didn't specify any location, so the next child node is
-        considered for execution. Since the condition is set to{' '}
-        <code>true</code> it will always be executed. This is exactly what we
-        want to happen since at this point we know the users wants to know the
-        hours of operation but no location was provided. (If we left the
-        condition empty, we'd get an error because no children node handled the
-        user request.)
+        <p>
+          Call this node <code>No Location</code>. Set the condition to{' '}
+          <code>true</code>. Here is why. When the user asks{' '}
+          <em>What are your hours of operation?</em> the{' '}
+          <code>#hours_info</code> intent is detected, so we enter the parent
+          node <span className="instruction">Hours of Operation</span>. The{' '}
+          <span className="instruction">Location Provided</span> child node is
+          then first evaluated. We fail its <code>@location</code> condition,
+          because the user didn't specify any location, so the next child node
+          is considered for execution. Since the condition is set to{' '}
+          <code>true</code> it will always be executed. This is exactly what we
+          want to happen since at this point we know the user wants to know the
+          hours of operation but no location was provided. (If we left the
+          condition empty, we'd get an error because no children node handled
+          the user request.)
+        </p>
+        <p>
+          Note also that this is why the order of nodes can matter (it didn't
+          for chitchat nodes, but it does here). If we revers the order and
+          place the <span className="instruction">No Location</span> node first,
+          its <code>true</code> condition is always satisfied and the{' '}
+          <span className="instruction">Location Provided</span> node will be
+          overshadowed and never executed. We always want to place the most
+          specific condition at the top, with the more generic condition nodes
+          at the bottom as catch all.
+        </p>
       </li>
       <li>
         We need a generic answer for when no location is specified, so go ahead
@@ -538,8 +552,8 @@ const Lab4 = () => (
         that entity in our chatbot, you'll notice that it includes entity values
         like <code>@relationship:husband</code>, <code>@relationship:wife</code>
         , etc. The course chatbot uses them to detect the relationship of the
-        flower receiver with the person who is asking for flower
-        recommendations.
+        user with the flower receiver along with the intent for{' '}
+        <code>#flower_suggestions</code>.
       </li>
       <li>
         You'll notice that some relationships have a syonym. For example,{' '}
