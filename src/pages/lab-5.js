@@ -4,7 +4,7 @@ import { Alert, UncontrolledTooltip } from 'reactstrap'
 
 import Layout from '../components/layout'
 
-const Lab4 = () => (
+const Lab5 = () => (
   <Layout>
     <h2>Lab 5: Deployment to WordPress</h2>
     <p>Lorem ipsum...</p>
