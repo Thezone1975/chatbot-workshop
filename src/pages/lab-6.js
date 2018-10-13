@@ -595,23 +595,23 @@ const Lab6 = () => (
       goodbye.
     </p>
     <p>
-      As an optional exercise, if you'd like an extra challenge, you could
-      actually use slots to reimplement the hours of operation and location
-      information logic, simplifying the design. You could get rid of the{' '}
+      Use slots to reimplement the hours of operation and location information
+      logic, simplifying the design. Get rid of the{' '}
       <span className="instruction">Assign City</span> node, and have a slot
       collecting the location inside of both{' '}
       <span className="instruction">Hours of Operation</span> and{' '}
-      <span className="instruction">Location Information</span>. If you were to
-      make the slots required, that is, explicitly asking the user{' '}
-      <code>For which city?</code> if they didn't include it in their original
-      question, then you could even get rid of the children nodes altogether,
-      using instead multiple responses directly inside of{' '}
-      <span className="instruction">Hours of Operation</span> and{' '}
+      <span className="instruction">Location Information</span>. Make the slots
+      required, that is, explicitly ask the user <code>For which city?</code> if
+      they didn't specify it in their original question, this way you can delete
+      the children nodes altogether, using instead multiple responses directly
+      inside of <span className="instruction">Hours of Operation</span> and{' '}
       <span className="instruction">Location Information</span>.
     </p>
     <p>
-      As an example, this is what{' '}
-      <span className="instruction">Hours of Operation</span> could look like.
+      This is what <span className="instruction">Hours of Operation</span> need
+      to look like. Ensure you make the changes for both{' '}
+      <span className="instruction">Hours of Operation</span> and{' '}
+      <span className="instruction">Location Information</span>.
     </p>
     <p style={{ textAlign: 'center' }}>
       <img
