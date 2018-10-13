@@ -23,19 +23,22 @@ const Navigation = () => (
           </NavigationLink>
         </NavItem>
         <NavItem>
-          <NavigationLink to="/lab-1">Lab 1: Set Up</NavigationLink>
+          <NavigationLink to="/lab-1">Lab 1</NavigationLink>
         </NavItem>
         <NavItem>
-          <NavigationLink to="/lab-2">Lab 2: Intents</NavigationLink>
+          <NavigationLink to="/lab-2">Lab 2</NavigationLink>
         </NavItem>
         <NavItem>
-          <NavigationLink to="/lab-3">Lab 3: Entities</NavigationLink>
+          <NavigationLink to="/lab-3">Lab 3</NavigationLink>
         </NavItem>
         <NavItem>
-          <NavigationLink to="/lab-4">Lab 4: Dialog</NavigationLink>
+          <NavigationLink to="/lab-4">Lab 4</NavigationLink>
         </NavItem>
         <NavItem>
-          <NavigationLink to="/lab-5">Lab 5: Deployment</NavigationLink>
+          <NavigationLink to="/lab-5">Lab 5</NavigationLink>
+        </NavItem>
+        <NavItem>
+          <NavigationLink to="/lab-6">Lab 6</NavigationLink>
         </NavItem>
       </Nav>
     </div>
