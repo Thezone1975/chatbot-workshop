@@ -181,7 +181,14 @@ const Lab4 = () => (
           <code>#greetings</code> intent
         </strong>
         . Autocomplete will help you find the intent (not that useful here, but
-        quite handy in complex chatbots with many intents.)
+        quite handy in complex chatbots with many intents.) It's worth noting
+        that you can make the condition of a node as complex or as simple as
+        you'd like. You can use <code>||</code> (or its alias <code>OR</code>)
+        and <code>&&</code> (or its alias <code>AND</code>) to make the
+        condition more complex. We don't want this in our specific chatbot, but
+        if you wanted to execute a node if the intent detected was either{' '}
+        <code>#greetings</code> or <code>#goodbyes</code> we could simply type{' '}
+        <code>#greetings OR #goodbyes</code> in the node condition.
       </li>
       <li>
         <p>
@@ -385,10 +392,10 @@ const Lab4 = () => (
           Delete the response from our{' '}
           <span className="instruction">Hours of Operation</span> node
         </strong>{' '}
-        by clicking on the bin icon in the response section in the{' '}
+        by clicking on the trash bin icon in the{' '}
         <span className="instruction">Then respond with:</span> section. We do
         that because we don't want this parent node to provide the answer. We'll
-        let the children node decide what's the right response.
+        let the children nodes decide what's the right response.
       </li>
       <li>
         With the <span className="instruction">Hours of Operation</span> node
@@ -405,7 +412,9 @@ const Lab4 = () => (
           Set the condition to <code>@location</code>
         </strong>
         , as we want to execute this node only if the user is enquiring about
-        hours of operation and a specific location was given.
+        hours of operation and a specific location was given. (A child node is
+        only executed if the parent node's condition is true or if a node
+        explicitly jumped to it. We'll see a jump example in Lab 6.)
       </li>
       <li>
         We need a way to offer a different response for each city, so we need to
@@ -678,9 +687,9 @@ const Lab4 = () => (
       from your customers.
     </p>
     <p>
-      We'll soon see how to deploy the chatbot, and then tackle more advanced topics in
-      the process of improving the chatbot's usefuleness and apparent degree of
-      intelligence.
+      We'll soon see how to deploy the chatbot, and then tackle more advanced
+      topics in the process of improving the chatbot's usefuleness and apparent
+      degree of intelligence.
     </p>
     <h3>Task 5: Take the Module 3 Quiz</h3>
     <p>
