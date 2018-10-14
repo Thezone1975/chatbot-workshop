@@ -750,27 +750,29 @@ const Lab6 = () => (
             </em>
           </li>
           <li>
-            <code>I'd like some flower recommendations</code>
+            You: <code>I'd like some flower recommendations</code>
           </li>
           <li>
             Chatbot: <em>For what occasion?</em>
           </li>
           <li>
-            <code>actually wait... what are your hours of operation?</code>
+            You: <code>actually wait... what are your hours of operation?</code>
           </li>
           <li>
             Chatbot: <em>For which city?</em>
           </li>
           <li>
-            <code>Auckland</code>
+            You: <code>Auckland</code>
           </li>
           <li>
+            Chatbot:{' '}
             <em>
               Our Auckland store is open Monday to Saturday from 9 am until 6
               pm, except statutory holidays.
-              <br />
-              For what occasion?
             </em>
+          </li>
+          <li>
+            Chatbot: <em>For what occasion?</em>
           </li>
         </ul>
       </li>
