@@ -10,6 +10,7 @@ import hoursChildNode from '../images/hours-location-provided.png'
 import hoursOfOperation from '../images/hours-of-operation.png'
 import locationProvidedNode from '../images/location-provided-child-node.png'
 import locationInformation from '../images/location-information.png'
+import noChildren from '../images/no-children.png'
 
 const Lab4 = () => (
   <Layout>
@@ -558,6 +559,7 @@ const Lab4 = () => (
         width="900"
       />
     </p>
+
     <h3>Task 4: Respond to location information</h3>
     <p>
       Our little chatbot is getting more useful by the minute. We now need to
@@ -691,6 +693,40 @@ const Lab4 = () => (
       topics in the process of improving the chatbot's usefuleness and apparent
       degree of intelligence.
     </p>
+
+    <h4>Are children nodes really necessary here?</h4>
+    <p>
+      Technically speaking we don't need children nodes to handle the case in
+      which no location is specified. We could simply add multiple responses to
+      the parent node, and add one last response in the list to act as our
+      catch-all with the condition set to
+      <code>true</code>, as shown in the image below.
+    </p>
+    <p>
+      However, I wanted to show you how to work with children nodes work, the
+      importance of their ordering, and their flexibility. If the logic to
+      handle that catch-all scenario was more complex than just a generic
+      response, having a dedicated child node to handle it would likely would
+      have been a good idea, anyway.
+    </p>
+    <p style={{ textAlign: 'center' }}>
+      <img
+        src={noChildren}
+        alt="Hours of Operation implemented with no children nodes"
+        title="Hours of Operation implemented with no children nodes"
+        width="900"
+      />
+    </p>
+    <p />
+    <p>
+      Later in the workshop, we'll get rid of children nodes in favor of
+      something called <span className="instruction">Slots</span>. For now,
+      please keep the two children nodes below both{' '}
+      <span className="instruction">Hours of Operation</span> and{' '}
+      <span className="instruction">Location Information</span>, as you defined
+      them in the previous tasks.
+    </p>
+
     <h3>Task 5: Take the Module 3 Quiz</h3>
     <p>
       Head over to the{' '}
