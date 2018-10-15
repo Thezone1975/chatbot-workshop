@@ -259,7 +259,7 @@ const Lab4 = () => (
         </p>
         <p>
           The order of these chitchat nodes is not that important because they
-          are all simple nodes with independent intents. However, order can
+          are all simple nodes with independent intents. However, the order can
           matter in more complex scenarios (as we'll see in a moment) and it
           makes sense to place them in a logical manner that is roughly
           equivalent to how a conversation would go. Greetings first, thank yous
@@ -475,9 +475,9 @@ const Lab4 = () => (
     </p>
     <h4>Create the No Location child node</h4>
     <p>
-      We now have have a child node to handle users asking about hours of
-      operation for a specific location. However, we also need a child node to
-      handle the case in which the user didn't specify a location.
+      We now have a child node to handle users asking about hours of operation
+      for a specific location. However, we also need a child node to handle the
+      case in which the user didn't specify a location.
     </p>
     <ol>
       <li>
@@ -706,8 +706,8 @@ const Lab4 = () => (
       However, I wanted to show you how to work with children nodes work, the
       importance of their ordering, and their flexibility. If the logic to
       handle that catch-all scenario was more complex than just a generic
-      response, having a dedicated child node to handle it would likely would
-      have been a good idea, anyway.
+      response, having a dedicated child node to handle it would likely be a
+      good idea, anyway.
     </p>
     <p style={{ textAlign: 'center' }}>
       <img
@@ -776,7 +776,7 @@ const Lab4 = () => (
     <p>
       <strong>Take the quiz</strong>, just like you did in the previous module.
       As a reminder, there are no trick questions, so go with the answer that
-      appears to make most sense to you.
+      appears to make the most sense to you.
     </p>
     <Alert color="success">
       We have a small, useful chatbot (if a basic one). In the next lab, we'll

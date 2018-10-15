@@ -13,7 +13,7 @@ const Lab3 = () => (
       Watson leverages intents we define to let us know what the user query is
       about. What does the user want? In the previous lab, we created a few
       chitchat intents, as well as <code>#hours_info</code> and{' '}
-      <code>#location_info</code>. If the user greet us, thanks us, wants to
+      <code>#location_info</code>. If the user greets us, thanks us, wants to
       leave the conversation, ask us about hours of operation, or location
       information, we'll know which <em>intent</em> they had.
     </p>
@@ -43,7 +43,7 @@ const Lab3 = () => (
       hours and locations might provide a specific location.
     </p>
     <p>
-      In our fictious Flower Shop Chain we have stores in Auckland, Wellington,
+      In our fictitious Flower Shop Chain we have stores in Auckland, Wellington,
       Sydney, Melbourne, and Brisbane. So a user might ask,{' '}
       <code>Where is your Wellington store?</code>. We shouldn't ignore that
       extra bit of information, so that we can take it into account when we
@@ -236,7 +236,7 @@ const Lab3 = () => (
         </p>
         <p>
           Depending on your chatbot, one or the other is a bigger compromise. In
-          our case, our fictious store has specific cities, so I think that
+          our case, our fictitious store has specific cities, so I think that
           opting for our own version of <code>@location</code> makes sense. If
           the chatbot needed to handle an arbitrary number of cities, then the{' '}
           <code>@sys-location</code>

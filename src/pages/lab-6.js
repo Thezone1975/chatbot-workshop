@@ -55,7 +55,7 @@ const Lab6 = () => (
     <p>
       Whenever a user enters a new input, the intent and entities that are
       detected don't stick around for the rest of the conversation. They exist
-      in the moment, for the current input, and are forgetten as the user types
+      at the moment, for the current input, and are forgotten as the user types
       more questions.
     </p>
     <p>
@@ -72,7 +72,7 @@ const Lab6 = () => (
       />
     </p>
     <p>
-      A human customer agent responding to the second question, would have
+      A human customer agent responding to the second question would have
       inferred that the user is asking about the hours of operation for the city
       they just enquired about in the previous question (i.e., Sydney). However,
       the entity detected in the first input only lives for the duration of that
@@ -408,7 +408,7 @@ const Lab6 = () => (
           our chatbot.
         </p>
         <p>
-          The second approach is to take what the user enters, verbamit. In
+          The second approach is to take what the user enters, verbatim. In
           other words, we are collecting whatever answer the user provides and
           storing it exactly as stated. The only downside to this is that the
           user might say, <em>I don't want to tell you</em> and we'll end up
@@ -651,7 +651,7 @@ const Lab6 = () => (
       Note that if you don't specify a question, the slot becomes optional,
       which means that the entity value will be stored in the context variable
       of your choice if detected in the user input, but the user won't be asked
-      explictly for it (since you didn't provide a question).
+      explicitly for it (since you didn't provide a question).
     </p>
     <p>
       If you add two slots to a node, then the node will ask the first question,
@@ -662,9 +662,9 @@ const Lab6 = () => (
     <p>
       The classic example of multiple slots in a node is a chatbot that makes a
       restaurant reservation. Let's say that the information it needs to collect
-      is name, phone number, date and time, and party size. The node can define
-      a slot for each of these values with their respective questions. This
-      greatly simplify the dialog flow, as it reduces what what would require
+      is the name, phone number, date and time, and party size. The node can
+      define a slot for each of these values with their respective questions.
+      This greatly simplifies the dialog flow, as it reduces what would require
       several nodes, to a single node that does all the work. It also ensures
       that the answers are collected before the conversation proceeds further
       which is crucial in a scenario where, say, you are making a reservation.
@@ -726,7 +726,7 @@ const Lab6 = () => (
     <p>
       Slots are awesome. However, their stubborn nature (for required slots that
       specify a question) can come across as rude if we are not careful. They
-      keep the user to task, which is fine if the user enters something
+      keep the user to the task, which is fine if the user enters something
       irrelevant. It's less okay if the user is asking a legitimate side
       question, however.
     </p>
@@ -909,7 +909,7 @@ const Lab6 = () => (
     <h3>Task 6: (Homework) Create your own chatbot</h3>
     <p>
       At this point in time, you have all the skills required to create a useful
-      chatbot that understands the user. Your take home assignment is to create
+      chatbot that understands the user. Your take-home assignment is to create
       your own chatbot. Whether a personal chatbot, or something that can be
       useful for your company internally or externally.
     </p>
