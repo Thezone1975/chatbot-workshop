@@ -177,8 +177,8 @@ const Lab3 = () => (
         <p>
           To enable <code>@sys-location</code> click on{' '}
           <span className="instruction">System entities</span> in the{' '}
-          <span className="instruction">Entities</span>
-          section of your workspace.{' '}
+          <span className="instruction">Entities</span> section of your
+          workspace.{' '}
           <strong>
             Turn on <code>@sys-location</code>
           </strong>

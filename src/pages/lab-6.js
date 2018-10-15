@@ -585,7 +585,7 @@ const Lab6 = () => (
         <strong>
           enable <span className="instruction">Multiple responses</span> for the
           node
-        </strong>
+        </strong>{' '}
         from the <span className="instruction">Customize</span> link as well.
       </li>
       <li>
@@ -608,7 +608,7 @@ const Lab6 = () => (
       </li>
       <li>
         <p>
-          Once you've added a few, open the
+          Once you've added a few, open the{' '}
           <span className="instruction">Try it out</span> panel, press the{' '}
           <span className="instruction">Clear</span> link, and{' '}
           <strong>test that this is actually working</strong>. For example, try:

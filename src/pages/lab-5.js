@@ -146,7 +146,7 @@ const Lab5 = () => (
         <p>
           There are two possible ways of specifying your credentials: through a
           username and password or through an API key. To find out which one is
-          used by your Watson Assistant service (and find out your credentials),
+          used by your Watson Assistant service (and find out your credentials),{' '}
           <strong>
             head over to the <span className="instruction">Deploy</span> section
             of your workspace
@@ -164,7 +164,7 @@ const Lab5 = () => (
       </li>
       <li>
         <p>
-          In your <span className="instruction">Plugin Setup</span> setting page
+          In your <span className="instruction">Plugin Setup</span> setting page{' '}
           <strong>select the matching authentication method.</strong> If your{' '}
           <span className="instruction">Credentials</span> page in Watson
           Assistant shows an API key (like it does in my case, as per the image

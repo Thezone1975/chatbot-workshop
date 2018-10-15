@@ -418,7 +418,7 @@ const Lab4 = () => (
         explicitly jumped to it. We'll see a jump example in Lab 6.)
       </li>
       <li>
-        We need a way to offer a different response for each city, so we need to
+        We need a way to offer a different response for each city, so we need to{' '}
         <strong>
           enable <span className="instruction">Multiple responses</span>
         </strong>
@@ -485,8 +485,8 @@ const Lab4 = () => (
         selected,{' '}
         <strong>
           click the <span className="instruction">Add node</span> button
-        </strong>
-        to add a sibiling node below it.
+        </strong>{' '}
+        to add a peer/sibiling node below it.
       </li>
       <li>
         <p>
