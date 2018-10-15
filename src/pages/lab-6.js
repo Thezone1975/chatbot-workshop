@@ -920,14 +920,25 @@ const Lab6 = () => (
       imported). But you have the tools to do so, and that's what matters.
     </p>
     <p>
-      Workspaces can be exported and imported as JSON file. You can find a version of the chatbot we built so far here. If needed, feel free to import it in your <span className="instruction">Workspaces</span> area as a starting point.
+      Workspaces can be exported and imported as JSON file. You can download a
+      version of the chatbot we built so far{' '}
+      <a
+        href="https://raw.githubusercontent.com/acangiano/chatbot-workshop/master/src/csv/workspace-with-slots.json"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        from here
+      </a>
+      . If needed, feel free to import it in your{' '}
+      <span className="instruction">Workspaces</span> area as a starting point.
     </p>
     <p>
       I don't expect you to figure out everything right away, as this was a lot
-      of material for one day. You know where to look now, and can always refer
-      back to this workshop material to refresh your memory. Not to mention,{' '}
+      of material for one day. But you know where to look now, and can always
+      refer back to this workshop material to refresh your memory. Not to
+      mention, consulting the{' '}
       <a href="https://console.bluemix.net/docs/services/conversation/getting-started.html#gettingstarted">
-        the official documentation
+        official documentation
       </a>
       .
     </p>
