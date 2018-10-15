@@ -142,7 +142,7 @@ const Lab4 = () => (
         src={chitchat}
         alt="Our chitchat nodes"
         title="Our chitchat nodes"
-        width="900"
+        width="700"
       />
     </p>
     <p>Follow these steps to add it to your chatbot:</p>
@@ -358,7 +358,7 @@ const Lab4 = () => (
             src={simpleHours}
             alt="Testing our Hours of Operation node"
             title="Testing our Hours of Operation node"
-            width="900"
+            width="700"
           />
         </p>
       </li>
@@ -449,7 +449,7 @@ const Lab4 = () => (
             src={hoursChildNode}
             alt="Our child node to handle hours of operations specific to a location"
             title="Our child node to handle hours of operations specific to a location"
-            width="900"
+            width="700"
           />
         </p>
       </li>
@@ -556,7 +556,7 @@ const Lab4 = () => (
         src={hoursOfOperation}
         alt="Testing our children nodes for Hours of Operation"
         title="Testing our children nodes for Hours of Operation"
-        width="900"
+        width="700"
       />
     </p>
 
@@ -608,7 +608,7 @@ const Lab4 = () => (
             src={locationProvidedNode}
             alt="Our child node to handle hours of operations specific to a location"
             title="Our child node to handle hours of operations specific to a location"
-            width="900"
+            width="700"
           />
         </p>
       </li>
@@ -654,7 +654,7 @@ const Lab4 = () => (
             src={locationInformation}
             alt="Our location information node structure"
             title="Our location information node structure"
-            width="900"
+            width="700"
           />
         </p>
       </li>
@@ -714,7 +714,7 @@ const Lab4 = () => (
         src={noChildren}
         alt="Hours of Operation implemented with no children nodes"
         title="Hours of Operation implemented with no children nodes"
-        width="900"
+        width="700"
       />
     </p>
     <p />

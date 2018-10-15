@@ -124,7 +124,7 @@ const Lab5 = () => (
             src={pluginActivation}
             alt="The plugin activation"
             title="The plugin activation"
-            width="900"
+            width="700"
           />
         </p>
       </li>
@@ -158,7 +158,7 @@ const Lab5 = () => (
             src={findingCredentials}
             alt="The Credentials section of your workspace"
             title="The Credentials section of your workspace"
-            width="900"
+            width="700"
           />
         </p>
       </li>
@@ -181,7 +181,7 @@ const Lab5 = () => (
             src={copyingCredentials}
             alt="Copy over the credentials from your workspace"
             title="Copy over the credentials from your workspace"
-            width="900"
+            width="700"
           />
         </p>
         <p>
@@ -219,7 +219,7 @@ const Lab5 = () => (
             src={deployedChatbot}
             alt="The chatbot deployed on a WordPress site"
             title="The chatbot deployed on a WordPress site"
-            width="900"
+            width="700"
           />
         </p>
       </li>
@@ -240,7 +240,7 @@ const Lab5 = () => (
         src={pluginSections}
         alt="The three plugin sections"
         title="The three plugin sections"
-        width="900"
+        width="700"
       />
     </p>
     <p>
@@ -276,7 +276,7 @@ const Lab5 = () => (
         src={buildIcon}
         alt="Use the Build icon to go back to developing your chatbot"
         title="Use the Build icon to go back to developing your chatbot"
-        width="900"
+        width="700"
       />
     </p>
     <Alert color="success">

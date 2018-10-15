@@ -43,8 +43,8 @@ const Lab3 = () => (
       hours and locations might provide a specific location.
     </p>
     <p>
-      In our fictitious Flower Shop Chain we have stores in Auckland, Wellington,
-      Sydney, Melbourne, and Brisbane. So a user might ask,{' '}
+      In our fictitious Flower Shop Chain we have stores in Auckland,
+      Wellington, Sydney, Melbourne, and Brisbane. So a user might ask,{' '}
       <code>Where is your Wellington store?</code>. We shouldn't ignore that
       extra bit of information, so that we can take it into account when we
       formulate a response.
@@ -120,7 +120,7 @@ const Lab3 = () => (
             src={showRecommendations}
             alt="Synonym recommendations offered by Watson"
             title="Synonym recommendations offered by Watson"
-            width="900"
+            width="700"
           />
         </p>
       </li>

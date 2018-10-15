@@ -68,7 +68,7 @@ const Lab6 = () => (
         src={noMemory}
         alt="No memory of the previous interaction is shown here"
         title="No memory of the previous interaction is shown here"
-        width="900"
+        width="700"
       />
     </p>
     <p>
@@ -171,7 +171,7 @@ const Lab6 = () => (
             src={cityDetection}
             alt="The city detection node"
             title="The city detection node"
-            width="900"
+            width="700"
           />
         </p>
       </li>
@@ -242,7 +242,7 @@ const Lab6 = () => (
             src={newLocationProvided}
             alt="Leveraging the $city context variable in the node"
             title="Leveraging the $city context variable in the node"
-            width="900"
+            width="700"
           />
         </p>
         <p>
@@ -266,7 +266,7 @@ const Lab6 = () => (
             src={withMemory}
             alt="The improved chatbot interaction"
             title="The improved chatbot interaction"
-            width="900"
+            width="700"
           />
         </p>
       </li>
@@ -381,7 +381,7 @@ const Lab6 = () => (
             src={collectName}
             alt="Testing out the name collection"
             title="Testing out the name collection"
-            width="900"
+            width="700"
           />
         </p>
 
@@ -469,7 +469,7 @@ const Lab6 = () => (
             src={goodbyeName}
             alt="Testing out the goodbye node"
             title="Testing out the goodbye node"
-            width="900"
+            width="700"
           />
         </p>
         <p>
@@ -602,7 +602,7 @@ const Lab6 = () => (
             src={sampleSlot}
             alt="A node using a slot and multiple responses"
             title="A node using a slot and multiple responses"
-            width="900"
+            width="700"
           />
         </p>
       </li>
@@ -710,7 +710,7 @@ const Lab6 = () => (
         src={refactoredHours}
         alt="Hours of Operation using slots"
         title="Hours of Operation using slots"
-        width="900"
+        width="700"
       />
     </p>
     <p>And this is what a full interaction would look like.</p>
@@ -719,7 +719,7 @@ const Lab6 = () => (
         src={testingSlots}
         alt="Testing the new Slot powered nodes"
         title="Testing the new Slot powered nodes"
-        width="900"
+        width="700"
       />
     </p>
     <h3>Task 4: Handling user digressions</h3>
@@ -736,7 +736,7 @@ const Lab6 = () => (
         src={watsonRude}
         alt="Digressions need to be handled graciously or it will make the chatbot appear to be rude"
         title="Digressions need to be handled graciously or it will make the chatbot appear to be rude"
-        width="900"
+        width="700"
       />
     </p>
     <p>
@@ -771,7 +771,7 @@ const Lab6 = () => (
             src={configuringSlot}
             alt="Configuring our slot"
             title="Configuring our slot"
-            width="900"
+            width="700"
           />
         </p>
         <p>
@@ -783,7 +783,7 @@ const Lab6 = () => (
             src={watsonLessRude}
             alt="A less rude interaction"
             title="A less rude interaction"
-            width="900"
+            width="700"
           />
         </p>
         <p>
@@ -832,7 +832,7 @@ const Lab6 = () => (
             src={digressionReturn}
             alt="Enabling digression returns from the Customize / Digressions section of a node"
             title="Enabling digression returns from the Customize / Digressions section of a node"
-            width="900"
+            width="700"
           />
         </p>
       </li>
