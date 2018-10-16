@@ -176,7 +176,9 @@ const Lab1 = () => (
           switch the region/location to{' '}
           <span className="instruction">Sydney</span>
         </strong>{' '}
-        for optimal performance.
+        for optimal performance. It may take up to a minute before the UI will
+        allow you to select a different data center. Give it a moment if you
+        don't see the option.
       </li>
       <li>
         Take note of the differences between the free Lite plan (which you'll be
