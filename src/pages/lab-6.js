@@ -597,6 +597,11 @@ const Lab6 = () => (
           about implementing them all or adding very meaningful flower
           recommendation responses.
         </p>
+        <Alert color="danger">
+          The slot sets the context variable <code>$occasion</code> for you.
+          Make sure you use <code>$occasion</code> not <code>@occasion</code> in
+          your multiple responses.
+        </Alert>
         <p style={{ textAlign: 'center' }}>
           <img
             src={sampleSlot}
