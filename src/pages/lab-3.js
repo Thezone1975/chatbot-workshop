@@ -108,7 +108,7 @@ const Lab3 = () => (
       </li>
       <li>
         At any time you can click on an entity value to edit its name or
-        synonym. Unlike intenties, entities are allowed to have spaces in them.
+        synonym. Entities values are allowed to have spaces in them.
         When you first create an entity value, you're given the option to click
         on the <span className="instruction">Show recommendations</span> button
         to select some synonyms from a list provided by Watson.{' '}
