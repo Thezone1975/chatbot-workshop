@@ -746,8 +746,8 @@ const Lab4 = () => (
     <p>
       The course builds a similar flower shop chatbot as well, but the course
       version is slightly different from the one we are developing in this
-      workshop. In order for you to successfully pass the quiz, please take note
-      of the following:
+      workshop. In order for you to successfully pass the quizzes, please take
+      note of the following:
     </p>
     <ul>
       <li>
