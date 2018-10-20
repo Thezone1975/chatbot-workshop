@@ -191,20 +191,20 @@ const Lab3 = () => (
         <p>
           Wait for it to finish training and then{' '}
           <strong>
-            try entering <code>hours for Auckland</code>
+            try entering <code>hours for Sydney</code>
           </strong>
           . Which entity values are recognized?
         </p>
       </li>
       <li>
         <p>
-          You'll notice that both <code>@sys-location:Auckland</code> and{' '}
-          <code>@location:Auckland</code>
+          You'll notice that both <code>@sys-location:Sydney</code> and{' '}
+          <code>@location:Sydney</code>
           are detected. So far so good.{' '}
           <strong>
-            Now try, <code>hours for auckland</code>
+            Now try, <code>hours for sydnei</code>
           </strong>{' '}
-          (note the lowercase letter). Which entities are detected? [
+          (note the typo). Which entities are detected? [
           <span
             style={{
               color: 'blue',
@@ -225,13 +225,15 @@ const Lab3 = () => (
       <li>
         <p>
           Unfortunately, only our fuzzy matched entity value is detected! The
-          system entity value expects an exact match, including capitalization.
-          So on one hand, we get to detect other cities and locations (
+          system entity value expects an exact match, for some cities it even
+          requires the correct capitalization (i.e., <code>auckland</code>, all
+          lowercase, won't be detected as <code>@sys-location:Auckland</code>
+          ). So on one hand, we get to detect other cities and locations (
           <strong>
-            try <code>hours for Christchurch</code>
+            try <code>hours for Perth</code>
           </strong>{' '}
-          again). On the other hand, the city has to be properly spelled by the
-          user.
+          again). On the other hand, the city has to be properly spelled (and
+          often capitalized) by the user.
         </p>
         <p>
           Depending on your chatbot, one or the other is a bigger compromise. In
@@ -241,14 +243,14 @@ const Lab3 = () => (
           <code>@sys-location</code>
           (warts and all) would be the best choice (unless we imported a large
           collection of cities via CSV into our own <code>@location</code>{' '}
-          entity in that scenario).
+          entity in that scenario, which is also an option).
         </p>
         <p>
           Don't get me wrong. System entities are very handy and you should use
           them to make your chatbot smarter. But <code>@sys-location</code> is
-          still in beta and has this shortcoming. It will likely be fixed in
-          future versions of Watson Assistant, but I wanted to make you aware of
-          it.
+          still in beta and has this shortcoming. It will likely be made more
+          forgiving in future versions of Watson Assistant, but I wanted to make
+          you aware of the current limitations.
         </p>
       </li>
       <li>
@@ -257,7 +259,8 @@ const Lab3 = () => (
           <strong>
             go ahead and disable <code>@sys-location</code>
           </strong>{' '}
-          from the <span className="instruction">System entities</span> section.
+          from the <span className="instruction">System entities</span> section,
+          as we'll simply use our own <code>@location</code> entity instead.
         </p>
       </li>
     </ol>
