@@ -38,7 +38,7 @@ const Lab4 = () => (
         Test our chatbot in the <span className="instruction">Try it out</span>{' '}
         panel;
       </li>
-      <li>Take your third graded quiz.</li>
+      <li>Take your second and third graded quizzes.</li>
     </ol>
     <h3>Task 1: Create a Dialog and improve the prompt</h3>
     <p>
@@ -727,7 +727,7 @@ const Lab4 = () => (
       them in the previous tasks.
     </p>
 
-    <h3>Task 5: Take the Module 3 Quiz</h3>
+    <h3>Task 5: Take the Module 2 and 3 Quizzes</h3>
     <p>
       Head over to the{' '}
       <a
@@ -740,14 +740,14 @@ const Lab4 = () => (
       course and{' '}
       <strong>
         find the <span className="instruction">Graded Review Questions</span>{' '}
-        inside Module 3.
+        inside Module 2 and 3.
       </strong>
     </p>
     <p>
-      Note, that the course builds a similar flower shop chatbot as well, but
-      the course version is slightly different from the one we are developing in
-      this workshop. In order for you to successfully pass the quiz, please take
-      note of the following:
+      The course builds a similar flower shop chatbot as well, but the course
+      version is slightly different from the one we are developing in this
+      workshop. In order for you to successfully pass the quiz, please take note
+      of the following:
     </p>
     <ul>
       <li>
@@ -774,9 +774,9 @@ const Lab4 = () => (
       </li>
     </ul>
     <p>
-      <strong>Take the quiz</strong>, just like you did in the previous module.
-      As a reminder, there are no trick questions, so go with the answer that
-      appears to make the most sense to you.
+      <strong>Take the quizzes</strong>, just like you did in the previous
+      module. As a reminder, there are no trick questions, so go with the answer
+      that appears to make the most sense to you.
     </p>
     <Alert color="success">
       We have a small, useful chatbot (if a basic one). In the next lab, we'll

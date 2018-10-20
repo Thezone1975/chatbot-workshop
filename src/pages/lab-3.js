@@ -32,8 +32,7 @@ const Lab3 = () => (
       </li>
       <li>Try out system entities;</li>
       <li>Import and export entities via CSV files;</li>
-      <li>Learn about synonyms and patterns;</li>
-      <li>Take your second graded quiz.</li>
+      <li>Learn about synonyms and patterns.</li>
     </ol>
 
     <h3>Task 1: Create, modify, and delete entities</h3>
@@ -108,10 +107,10 @@ const Lab3 = () => (
       </li>
       <li>
         At any time you can click on an entity value to edit its name or
-        synonym. Entities values are allowed to have spaces in them.
-        When you first create an entity value, you're given the option to click
-        on the <span className="instruction">Show recommendations</span> button
-        to select some synonyms from a list provided by Watson.{' '}
+        synonym. Entities values are allowed to have spaces in them. When you
+        first create an entity value, you're given the option to click on the{' '}
+        <span className="instruction">Show recommendations</span> button to
+        select some synonyms from a list provided by Watson.{' '}
         <strong>Try out this feature.</strong> If you want to leverage it for an
         existing entity value, click on the small Watson icon next to it, as
         shown in the picture below.
@@ -319,25 +318,6 @@ const Lab3 = () => (
       <code>04\d&#123;2&#125;\s\d&#123;3&#125;\s\d&#123;3&#125;</code> to detect
       that the number provided is an Australian mobile phone number). If you are
       not a programmer, you can safely ignore this advanced feature. 😊
-    </p>
-
-    <h3>Task 4: Take the Module 2 Quiz</h3>
-    <p>
-      Head over to the{' '}
-      <a
-        href="https://courses.cognitiveclass.ai/courses/course-v1:CognitiveClass+CB0103EN+v1/courseware/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Build Your Own Chatbot
-      </a>{' '}
-      course and{' '}
-      <strong>
-        find the <span className="instruction">Graded Review Questions</span>{' '}
-        inside Module 2. Take the quiz
-      </strong>
-      , just like you did in the first module. As a reminder, there are no trick
-      questions, so go with the answer that appears to make most sense to you.
     </p>
     <Alert color="success">
       Now that you know how to work with intents and entities, we can move on to
