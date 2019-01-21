@@ -17,8 +17,51 @@ const Lab5 = () => (
       The small chatbot we built so far works well enough from the{' '}
       <span className="instruction">Try it out</span> panel. That's great and
       all, but our customers won't have access to it unless we deploy it
-      somewhere.
+      somewhere. Let's see how to accomplish that.
     </p>
+
+    <h3>What you will accomplish</h3>
+    <p>In this lab you will:</p>
+    <ol>
+      <li>Create an Assistant and link it to your skill;</li>
+      <li>Obtain a WordPress site for testing purposes;</li>
+      <li>Deploy our chatbot to your WordPress site;</li>
+      <li>Learn about the various features offered by the Watson Assistant
+        WordPress plugin.
+      </li>
+    </ol>
+
+    <h3>Task 1: Create an Assistant and link it to your skill</h3>
+    <p>
+      So far we created a dialog skill, which is the core engine of our chatbot. However, in order to deploy it, we'll need to create an Assistant and link it to our skill. You can think of assistants as a container of one or more skills. When you deploy a chatbot on a site, you're a deploying the assistant.
+    </p>
+    <ol>
+      <li><strong>Click on the back arrow in the top left of your skill.</strong> This will bring you back to your <span className="instruction">Skills</span> area.</li>
+      <li>From here, <strong>click on the <span className="instruction">Assistants</span> tab</strong> at the top and <strong>then the <span className="instruction">Create new</span> button.</strong></li>
+      <li>
+        <p>
+          You'll be asked to give it a name (e.g., <code>Florence Chatbot</code>, an optional description, and whether or not you want a preview link.
+        </p>
+        <p>
+          <strong>Definitely keep the preview enabled</strong> so that you'll be able to show a preview of your chatbot to other people by simply giving them a link. It's a great tool to let other people try your chatbot before you actually deploy it on your site.
+        </p>
+        <p>
+          Finally, <strong>click on the <span className="instruction">Create</span> button to generate the assistant.</strong>
+        </p>
+      </li>
+      <li>You'll be prompted to add a dialog skill to the assistant you just created. Since we already worked on one, we'll <strong>click <span className="instruction">Add Dialog Skill</span></strong> and <strong>then select <span className="instruction">Add existing skill</span>.</strong> Next, <strong>select the <span className="instruction">Flower Shop Skill</span> by clicking on it.</strong> You should see that the <span className="instruction">Florence Chatbot</span> assistant now has the <span className="instruction">Flower Shop Skill</span> linked to it.</li>
+      <li>Your chatbot assistant is now ready to be deployed. You can see a preview of it <strong>by clicking on the Preview Link button.</strong></li>
+      <li>
+        <p>
+          When you deploy your assistant in the next steps, you'll be asked to provide your chatbot credentials. <strong>Click on the <span className="instruction">View API Details</span> link</strong> in the top right of your <span className="instruction">Florence Chatbot</span> assistant page.
+        </p>
+        <p>
+          You'll need to know the <span className="instruction">Assistant URL</span>, <span className="instruction">Username</span> and the <span className="instruction">Password</span> in order to successfully deploy your chatbot later on. You might want to <strong>make note of them now</strong> or simply bookmark the page to find it more easily.
+        </p>
+      </li>
+    </ol>
+
+    <h3>Task 2: Deploy your chatbot</h3>
     <p>
       There are many ways to deploy chatbots built with Watson Assistant on
       sites, messenger apps, Slack, and more. And even though newer/easier ways
@@ -26,25 +69,14 @@ const Lab5 = () => (
       require programming skills.
     </p>
     <p>
-      To make deployment accessible to non-developers as well, we created a
+      To make deployment more accessible to non-developers as well, we created a
       WordPress plugin that makes it trivial for anyone to place a Watson
       Assistant chatbot on a site (without the need to develop a proxy
       application between your site and the Watson Assistant service). WordPress
       powers about a third of the websites out there so it was a logical target.
     </p>
-    <h3>What you will accomplish</h3>
-    <p>In this lab you will:</p>
-    <ol>
-      <li>Obtain a WordPress site for testing purposes;</li>
-      <li>Deploy our chatbot to your WordPress site;</li>
-      <li>
-        Learn about the various features offered by the Watson Assistant
-        WordPress plugin.
-      </li>
-    </ol>
-    <h3>Task 1: Deploy your chatbot</h3>
     <p>
-      Before we even look at deployment, we'll need to have a site to deploy to.
+      Before we even look at deployment, however, we'll need to have a site to deploy to.
       Thankfully by being enrolled in the course on Cognitive Class, we get to
       receive one for free. It's not the kind of site you'd want to use
       permanently, but for testing purposes it will do.
@@ -130,69 +162,16 @@ const Lab5 = () => (
       </li>
       <li>
         <strong>
-          Click on{' '}
-          <span className="instruction">
-            Please fill in your Watson Assistant Workspace Credentials.
-          </span>
-        </strong>{' '}
-        and{' '}
+          Click on the link inviting you to fill in your Watson Assistant credentials</strong> and{' '}
         <strong>
           then on the <span className="instruction">Plugin Setup</span> tab.
         </strong>
         Here we'll be able to specify your Watson Assistant credentials for the
-        chatbot we've been building.
+        chatbot assistant we created in the previous task.
       </li>
       <li>
         <p>
-          There are two possible ways of specifying your credentials: through a
-          username and password or through an API key. To find out which one is
-          used by your Watson Assistant service (and find out your credentials),{' '}
-          <strong>
-            head over to the <span className="instruction">Deploy</span> section
-            of your workspace
-          </strong>{' '}
-          by clicking on the third blue icon from the top as shown in figure.
-        </p>
-        <p style={{ textAlign: 'center' }}>
-          <img
-            src={findingCredentials}
-            alt="The Credentials section of your workspace"
-            title="The Credentials section of your workspace"
-            width="700"
-          />
-        </p>
-      </li>
-      <li>
-        <p>
-          In your <span className="instruction">Plugin Setup</span> setting page{' '}
-          <strong>select the matching authentication method.</strong> If your{' '}
-          <span className="instruction">Credentials</span> page in Watson
-          Assistant shows an API key (like it does in my case, as per the image
-          above),{' '}
-          <strong>
-            select <span className="instruction">API Key</span> and copy over
-            your <span className="instruction">API Key</span> and{' '}
-            <span className="instruction">Workspace URL</span>
-          </strong>{' '}
-          as shown in the image below.
-        </p>
-        <p style={{ textAlign: 'center' }}>
-          <img
-            src={copyingCredentials}
-            alt="Copy over the credentials from your workspace"
-            title="Copy over the credentials from your workspace"
-            width="700"
-          />
-        </p>
-        <p>
-          If your credentials are shown as a username and password, do the same
-          by copying over <span className="instruction">Username</span>,{' '}
-          <span className="instruction">Password</span> and{' '}
-          <span className="instruction">Workspace URL</span>, instead.
-        </p>
-        <p>
-          In either case, <strong>make sure that the chatbot is enabled</strong>
-          . In the future, should you decide to temporarly disable the chatbot,
+          <strong>Make sure that the chatbot is enabled</strong>. In the future, should you decide to temporarly disable the chatbot,
           you'll be able to do so from this page by deselecting the checkmark
           next to <span className="instruction">Enable Chatbot</span>.
         </p>
@@ -224,7 +203,7 @@ const Lab5 = () => (
         </p>
       </li>
     </ol>
-    <h3>Task 2: Familiarize yourself with the plugin options</h3>
+    <h3>Task 3: Familiarize yourself with the plugin options</h3>
     <p>
       The WordPress plugin for Watson Assistant offers many customizations
       options. Some are merely cosmetic, while others significantly affect the
@@ -263,22 +242,6 @@ const Lab5 = () => (
       me.
     </p>
 
-    <h3>Side note</h3>
-
-    <p>
-      Note that in your workspace, you can go back to developing your chatbot
-      (from your <span className="instruction">Credentials</span> page) by
-      clicking on the <span className="instruction">Build</span> icon as shown
-      below.
-    </p>
-    <p style={{ textAlign: 'center' }}>
-      <img
-        src={buildIcon}
-        alt="Use the Build icon to go back to developing your chatbot"
-        title="Use the Build icon to go back to developing your chatbot"
-        width="700"
-      />
-    </p>
     <Alert color="success">
       We now know how to create basic chatbots and deploy them for our customers
       to use. The next step is to make our chatbot better and in the process,

@@ -96,7 +96,7 @@ const Lab6 = () => (
     <ol>
       <li>
         In the <span className="instruction">Dialog</span> section of your
-        workspace, select the <span className="instruction">Welcome</span> node
+        skill, select the <span className="instruction">Welcome</span> node
         and then{' '}
         <strong>
           click <span className="instruction">Add node</span>
@@ -925,7 +925,7 @@ const Lab6 = () => (
       imported). But you have the tools to do so, and that's what matters.
     </p>
     <p>
-      Workspaces can be exported and imported as JSON file. You can download a
+      Skills can be exported and imported as JSON file. You can download a
       version of the chatbot we built so far{' '}
       <a
         href="https://raw.githubusercontent.com/acangiano/chatbot-workshop/master/src/csv/workspace-with-slots.json"
@@ -935,7 +935,7 @@ const Lab6 = () => (
         from here
       </a>
       . If needed, feel free to import it in your{' '}
-      <span className="instruction">Workspaces</span> area as a starting point.
+      <span className="instruction">Skills</span> area as a starting point.
     </p>
     <p>
       I don't expect you to figure out everything right away, as this was a lot
