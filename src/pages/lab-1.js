@@ -197,18 +197,18 @@ const Lab1 = () => (
           Click on the <span className="instruction">Launch tool</span> button
         </strong>{' '}
         to access the web application that will allow you to create chatbots.
-        You'll land on an informative tab.
+        You'll land on an informative page. Feel free to read it and when you are ready, follow the instructions below.
       </li>
       <li>
         <strong>
-          Click on the <span className="instruction">Workspaces</span> tab
+          Click on the <span className="instruction">Skills</span> menu at the top of the page
         </strong>{' '}
-        instead, as it's where we'll be creating chatbots. For quick access in
+        , as it's where we'll be creating the Dialog Skill for your chatbot. For quick access in
         future labs,{' '}
         <strong>
-          bookmark the <span className="instruction">Workspaces</span> page
+          bookmark the <span className="instruction">Skills</span> page
         </strong>{' '}
-        in your running instance of Watson Assistant.
+        in your running instance of Watson Assistant. It's worth noting, that Skills were formerly known as Workspaces.
       </li>
     </ol>
 

@@ -50,7 +50,7 @@ const Lab4 = () => (
         <strong>
           Click on the <span className="instruction">Dialog</span> section
         </strong>{' '}
-        of your workspace.
+        of your skill.
       </li>
       <li>
         It's empty at the moment. Go ahead and{' '}

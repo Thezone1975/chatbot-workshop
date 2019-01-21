@@ -54,7 +54,7 @@ const Lab3 = () => (
     <ol>
       <li>
         <strong>
-          In your workspace, click on{' '}
+          In your skill, click on{' '}
           <span className="instruction">Entities</span>
         </strong>{' '}
         to enter the entities section.
@@ -177,7 +177,7 @@ const Lab3 = () => (
           To enable <code>@sys-location</code> click on{' '}
           <span className="instruction">System entities</span> in the{' '}
           <span className="instruction">Entities</span> section of your
-          workspace.{' '}
+          skill.{' '}
           <strong>
             Turn on <code>@sys-location</code>
           </strong>
@@ -224,16 +224,12 @@ const Lab3 = () => (
       </li>
       <li>
         <p>
-          Unfortunately, only our fuzzy matched entity value is detected! The
-          system entity value expects an exact match, for some cities it even
-          requires the correct capitalization (i.e., <code>auckland</code>, all
-          lowercase, won't be detected as <code>@sys-location:Auckland</code>
-          ). So on one hand, we get to detect other cities and locations (
+          Some of you will continue to see both entities being detected. Others, will see just your custom entity detected. Depending on the version of the system entities deployed in your skill (behind the scenes and outside your control), the system entity might expect an exact match for cities (including the correct capitalization). So on one hand, we get to detect other cities and locations (
           <strong>
             try <code>hours for Perth</code>
           </strong>{' '}
           again). On the other hand, the city has to be properly spelled (and
-          often capitalized) by the user.
+          often capitalized) by the user if your version of system entities fails to detect mispelling.
         </p>
         <p>
           Depending on your chatbot, one or the other is a bigger compromise. In
@@ -247,10 +243,8 @@ const Lab3 = () => (
         </p>
         <p>
           Don't get me wrong. System entities are very handy and you should use
-          them to make your chatbot smarter. But <code>@sys-location</code> is
-          still in beta and has this shortcoming. It will likely be made more
-          forgiving in future versions of Watson Assistant, but I wanted to make
-          you aware of the current limitations.
+          them to make your chatbot smarter, but I wanted to make
+          you aware of possible limitations in the current beta incarnation.
         </p>
       </li>
       <li>

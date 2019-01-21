@@ -18,7 +18,7 @@ const Lab2 = () => (
     <h3>What you will accomplish</h3>
     <p>In this lab you will:</p>
     <ol>
-      <li>Create a workspace for your chatbot;</li>
+      <li>Create a skill for your chatbot;</li>
       <li>Create, modify, and delete intents;</li>
       <li>
         Add intents from the{' '}
@@ -31,21 +31,21 @@ const Lab2 = () => (
       <li>Import and export intents via CSV files;</li>
     </ol>
 
-    <h3>Task 1: Create a workspace for your chatbot</h3>
+    <h3>Task 1: Create a skill for your chatbot</h3>
     <p>
       This lab is all about intents, but in order to work with them, we'll need
-      to create a workspace which will contain said intents (along with entities
-      and the dialog).
+      to create a dialog skill which will contain said intents (along with entities
+      and the dialog itself).
     </p>
     <p>
       Although it's possible to create elaborate chatbots that use multiple
-      workspaces, it is common to have just one workspace per chatbot. In other
+      skills, it is common to have just one skill per chatbot. In other
       words, for now you can simply{' '}
-      <strong>think of your workspace as your chatbot</strong>.
+      <strong>think of your dialog skill as your chatbot</strong>.
     </p>
     <ol>
       <li>
-        From the <span className="instruction">Workspaces</span> page of your
+        From the <span className="instruction">Skills</span> page of your
         Watson Assistant instance [
         <span
           style={{
@@ -60,39 +60,21 @@ const Lab2 = () => (
         ]
         <UncontrolledTooltip placement="top" target="no-bookmark">
           If you didn't bookmark your{' '}
-          <span className="instruction">Workspaces</span> page in the previous
+          <span className="instruction">Skills</span> page in the previous
           lab, you can find your way back by visiting your dashboard and
           clicking on the Watson Assistant service you created.
         </UncontrolledTooltip>
         ,{' '}
         <strong>
-          click on the <span className="instruction">Create</span> button
-        </strong>{' '}
-        within the <span className="instruction">Create a new workspace</span>{' '}
-        tile. [
-        <span
-          style={{
-            color: 'blue',
-            fontWeight: 'bold',
-          }}
-          href="#"
-          id="ignore-customer-service"
-        >
-          Note
-        </span>
-        ]
-        <UncontrolledTooltip placement="top" target="ignore-customer-service">
-          You'll also see a Customer Service sample that you can create by
-          clicking <span className="instruction">Edit sample</span>. Ignore it
-          for now, as we'll take a look at it later in the labs.
-        </UncontrolledTooltip>
+          click on the <span className="instruction">Create new</span> button
+        </strong>.
       </li>
       <li>
-        You'll be offered to enter a <span className="instruction">Name</span>{' '}
+        Here you'll be able to add a Dialog Skill. You'll be offered to enter a <span className="instruction">Name</span>{' '}
         and an optional <span className="instruction">Description</span>. Enter{' '}
-        <code>Flower Shop Chatbot</code> or whatever you prefer for the name.
+        <code>Flower Shop Skill</code> or whatever you prefer for the name.
         For the description, feel free to add{' '}
-        <code>A chatbot for a flower shop chain.</code> or something similar.
+        <code>A skill for a flower shop chain.</code> or something similar. You'll also notice that the UI offers you to create a sample customer service skill from the <span className="instruction">Use sample skill</span> tab and even import skills from JSON files from the <span className="instruction">Import skill</span> tab. You can ignore them for now.
       </li>
       <li>
         We'll create the chatbot in English, but{' '}
@@ -105,12 +87,12 @@ const Lab2 = () => (
         <strong>
           click on the <span className="instruction">Create</span> button
         </strong>{' '}
-        to generate the empty workspace for your chatbot.
+        to generate the empty skill for your chatbot.
       </li>
       <li>
-        Practice going back and forth between{' '}
-        <span className="instruction">Workspaces</span> and the workspace you
-        just created (e.g., <code>Flower Shop Chatbot</code>
+        Practice going back and forth between the{' '}
+        <span className="instruction">Skills</span> page and the skill you
+        just created (e.g., <code>Flower Shop Skill</code>
         ).
       </li>
     </ol>
@@ -118,8 +100,8 @@ const Lab2 = () => (
     <h3>Task 2: Create, train, and test intents</h3>
 
     <p>
-      Upon creation of the workspace, you'll find yourself on the{' '}
-      <span className="instruction">Intents</span> section of your workspace.
+      Upon creation of the skill, you'll find yourself on the{' '}
+      <span className="instruction">Intents</span> section of your skill.
       Here you can add intents in several ways. In this task, we'll focus on the
       most common way. That is, manually adding intents.
     </p>
@@ -258,12 +240,12 @@ const Lab2 = () => (
       <strong>
         click on <span className="instruction">Content Catalog</span>
       </strong>{' '}
-      within your workspace.
+      within your dialog skill.
     </p>
     <p>
       Select one category of your choice (e.g., Banking) and then{' '}
       <strong>
-        click on the <span className="instruction">Add to workspace</span>{' '}
+        click on the <span className="instruction">Add to skill</span>{' '}
         button
       </strong>{' '}
       next to it. Switch back to the{' '}
@@ -340,7 +322,7 @@ const Lab2 = () => (
       </li>
       <li>
         From the <span className="instruction">Intents</span> section of your
-        workspace,{' '}
+        skill,{' '}
         <strong>
           click on the <span className="instruction">Import intents</span> icon
         </strong>{' '}
